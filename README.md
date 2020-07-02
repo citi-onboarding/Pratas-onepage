@@ -1,4 +1,6 @@
-# How to run this boilerplate
+# Pratas-onepage
+
+## How to run this Project
 > A tutorial on how to create mongodb and cloudinary > accounts, install dependencies and run the project.
 
 ## 1. Install dependencies
@@ -50,7 +52,10 @@ Then go to `/server` and run `node index.js`, you will find the project on `http
 
 - - -
 
-#### Developed by [Jorrmungandr](https://github.com/Jorrmungandr)
+#### Developed Team
+- Daniel França - *Project Manager* - [DanielFrancaContaGit](https://github.com/DanielFrancaContaGit)
+- Deborah Espíndola - *Front-end/Back-end/Devops* - [debespindola](https://github.com/debespindola)
+- Isaque Diniz - *Front-end/Back-end/Devops* - [isaquetdiniz](https://github.com/isaquetdiniz)
 
 This boilerplate was meant to be used in [CITi's](https://github.com/CITi-UFPE) selective process on 2020.1, to help the development of onepage websites.
 
