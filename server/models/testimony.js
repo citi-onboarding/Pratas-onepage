@@ -2,13 +2,11 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-// First we create the testimonies list.
-const depoimentos = new keystone.List('Depoimentos', {
+const testimony = new keystone.List('Depoimentos', {
   map: { name: 'name' },
 });
 
-// Then we are going to add the fields to our list.
-depoimentos.add({
+testimony.add({
   name: {
     type: Types.Text, value: 'Depoimentos', required: true, initial: true,
   },
@@ -23,4 +21,4 @@ depoimentos.add({
   },
 });
 
-depoimentos.register();
+testimony.register();
