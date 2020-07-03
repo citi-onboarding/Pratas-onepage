@@ -10,8 +10,8 @@ Testimonies.add({
     require: true,
     initial: true, 
   },
-  depoimento: {
-    type: Types.depoimento,
+  text: {
+    type: Types.Text,
     required: true, 
     initial: true, 
     index: true,
