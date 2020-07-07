@@ -5,6 +5,7 @@ import {
   Banner,
   AboutUs,
   Contact,
+  Footer,
 } from './components';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Banner />
       <AboutUs/>
       <Contact />
+      <Footer />
     </section>
   );
 }

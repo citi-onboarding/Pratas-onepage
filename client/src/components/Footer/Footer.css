@@ -1,11 +1,11 @@
-.contact-session {
+.footer-session {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: whitesmoke;
 }
 
-.contact-session-social {
+.footer-session-social {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -15,27 +15,27 @@
     border-left: 2px solid black;
 }
 
-.contact-session-social div {
+.footer-session-social div {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-.contact-session-end{
+.footer-session-end{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.contact-session-adm {
+.footer-session-adm {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.contact-session-citi{
+.footer-session-citi{
     display: flex;
     align-items: center;
 }
