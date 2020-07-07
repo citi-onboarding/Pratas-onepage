@@ -9,7 +9,7 @@ footer.add({
     Instragram: {type: Types.Url, initial: true},
     Facebook: {type: Types.Url, initial: true},
     Email: {type: Types.Email, initial: true},
-    Telefone: {type: Types.Number, initial: true},
+    Telefone: {type: Types.Text, initial: true},
     Whatsapp: {type: Types.Url, initial: true},
     AdminURL: {type: Types.Url, initial: true}
 
