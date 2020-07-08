@@ -1,17 +1,90 @@
-h1{
-    font-size: 70px;
+body, html, section, div, h1, form, input, button { 
+    margin: 0;
+    padding: 0;
 }
-.contatc-session{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+h1 {
+    align-self: flex-start;
+
+    padding-left: 75px;
+
+    font: 700 46px Nunito Sans;
+    color: #e4e4e4;
+    text-transform: uppercase;
+}
+.contact-session {
     width: 100%;
-}
-.contact-session img{
-    width: 40%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
 }
 .contact-session-form {
     width: 60%;
-    background-color: teal;
+    height: 100vh;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1B1B1B;
 }
+
+form {
+    margin-top: 40px;
+    height: 70%;
+    width: 80%;
+}
+
+input {
+    width: 95%;
+
+    font: 600 20px Nunito Sans;
+
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.first{
+    width: 40%;
+}
+
+#first{
+    margin-right: 80px;
+}
+
+.message{
+    height: 25%;
+}
+
+.submit{
+    width: 20%;
+    height: 10%;
+
+    float: right;
+
+    margin-right: 10px;
+    color: #000000;
+    background: #FFFFFFCC;
+}
+
+.contact-session-image {
+    width: 40%;
+    height: 100vh;
+
+    background-color: #000000;
+}
+
+.contact-session-image img {
+    width: 100%;
+    height: 100%;
+
+    box-shadow: 15px 15px 5px #00000029;
+    opacity: 0.41;
+}
+
