@@ -22,7 +22,7 @@ h1 {
 }
 .contact-session-form {
     width: 60%;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -42,6 +42,7 @@ input {
     width: 95%;
 
     font: 600 20px Nunito Sans;
+    color: #e4e4e4;
 
     background: transparent;
     border: none;
@@ -62,25 +63,26 @@ input {
     height: 25%;
 }
 
-.submit{
+.submit {
     width: 20%;
     height: 10%;
 
     float: right;
+    padding-bottom: 20px;
 
     margin-right: 10px;
     color: #000000;
     background: #FFFFFFCC;
 }
 
-.contact-session-image {
+.contact-session-secondary {
     width: 40%;
-    height: 100vh;
+    height: 100%;
 
     background-color: #000000;
 }
 
-.contact-session-image img {
+ .contact-session-secondary img {
     width: 100%;
     height: 100%;
 
@@ -88,3 +90,37 @@ input {
     opacity: 0.41;
 }
 
+@media (max-width: 700px){
+    .contact-session {
+        height: 60vh;
+    }
+    .contact-session-form {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+    .contact-session-secondary {
+        display: none;
+    }
+    .submit {
+        align-self: center;
+        width: 30%;
+        height: 8%;
+    }
+    .first {
+        width: 95%;
+    }
+    input {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    h1 {
+        align-self: center;
+        padding-left: 0px;
+        font-size: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}

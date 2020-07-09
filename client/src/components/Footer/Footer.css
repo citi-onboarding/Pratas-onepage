@@ -4,6 +4,7 @@ body, html, a, p, h3, img {
 }
 
 h3{
+    font-size: 16x;
     margin-bottom: 15px;
 }
 
@@ -53,7 +54,7 @@ footer {
     border-left: 2px solid #707070;
 }
 
-.footer-session-main a:link{
+.footer-session-main a:link {
     text-decoration: none;
     color: #000000;
 }
@@ -103,16 +104,21 @@ div .icons-footer {
         margin-bottom:5px;
     }
     .logoFooter{
-        margin-top: 15px;
+        margin-top: 0px;
     }
     .footer-session-main {
+        height: 70%;
+
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .footer-session-secondary {
+        height: 30%;
+
         flex-direction: column;
-        padding-top: 5px;
+        justify-content: flex-start;
+        padding-top: 10px;
     }
     .footer-session-main div {
         border-left: 0;
@@ -122,8 +128,8 @@ div .icons-footer {
         align-items: center;
     }
     .logoFooter {
-        width: 15%;
-        height: 30%;
+        width: 20%;
+        height: 20%;
     }
     div .icons-footer {
         justify-content: center;
