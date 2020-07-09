@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
+
+#root {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.banner-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url('./useful/banner.png');
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.brand-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  font-family: Nunito Sans;
+  font-weight: bold;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-family: Nunito Sans, Semibold;
+  font-size: 0.95rem;
+  text-align: center;
+  width: 85%;
+}
+
+.products-button {
+  font-family: Nunito Sans;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 0.12rem solid black;
+  width: 13rem;
+  height: 2.8rem;
+  align-self: center;
+  margin-top: 5.2rem;
+}
