@@ -12,6 +12,7 @@ body {
 
 .title-container {
   height: 5rem;
+  align-items: center;
 }
 
 .background {
@@ -27,7 +28,8 @@ body {
 }
 
 .title  {
-  font-family: Nunito Sans, Bold;
+  font-family: Nunito Sans;
+  font-weight: bold;
   position: absolute;
   left: 1.5rem;
   z-index: 10;
@@ -35,22 +37,24 @@ body {
 
 .subtitle {
   font-family: Nunito Sans;
-  font-size: 12px;
+  font-size: 0.6rem;
   justify-content: center;
-  align-items: center;
   position: absolute;
 }
 
+.owner-picture {
+  align-self: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 13rem;
+  box-shadow: 15px 15px 15px #00000029;
+}
 .information-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.owner-picture {
-  width: 13rem;
-  box-shadow: 15px 15px 15px #00000029;
-}
 
 .about-us-text {
   font-family: Nunito Sans;
@@ -66,8 +70,9 @@ body {
 
 .each-value {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 
 .values-icons {
@@ -83,6 +88,10 @@ body {
 }
 
 @media(min-width: 1024px) {
+  .about-us {
+    display: flex;
+  }
+
   .background {
     width: 13rem;
   }
@@ -92,27 +101,33 @@ body {
 
   .information-container {
     flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .owner-picture {
-    width: 18rem;
-    right: 0rem;
+    align-self: unset;
+    width: 34%;
+  }
+
+  .text-and-values {
+    width: 66%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 5rem;
   }
 
   .about-us-text {
-    width: 25rem;
-    position: absolute;
+    width: 90%;
     bottom: 16rem;
     left: 6rem;
   }
  
   .values-container {
-    width: 28rem;
+    width: 80%;
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
     bottom: 7rem;
-    left: 4rem;
   }
 
   .each-value {
