@@ -7,6 +7,8 @@ import {
   AboutUs,
   Footer,
   NavBar,
+  Testimonials,
+
 } from './components';
 
 function App() {
@@ -17,6 +19,7 @@ function App() {
       <Products />   
       <AboutUs/>
       <Footer />
+      <Testimonials />
     </section>
   );
 }

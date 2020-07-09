@@ -1,0 +1,61 @@
+body, html, section, div, h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials-session {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px solid red;
+    background-color: #e9e9e9;
+    clip-path: polygon(100% 100%, 52% 100%, 23% 92%, 0 100%, 0 9%, 25% 0, 64% 7%, 100% 0);
+}
+
+.testimonials-session-title {
+    width: 35%;
+    height: 15%;
+
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+    box-shadow: 20px 20px 15px #00000029;
+}
+
+.testimonials-session-title h1 {
+    position: relative;
+    top: 20px;
+    
+    font: 700 36px Nunito Sans;
+    text-transform: uppercase;
+}
+
+.session-subtitle {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font: 600 14px Nunito Sans;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+.testimonials-session-carrossel {
+    width: 70%;
+    height: 40%;
+
+    border: 2px solid green;
+}
