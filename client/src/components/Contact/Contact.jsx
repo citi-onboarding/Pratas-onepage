@@ -17,8 +17,8 @@ function Contact(){
                     <input type="submit" className="submit"/>
                 </form>
             </div> 
-            <div className="contact-session-image">
-                <img src={contactImage} alt="Contact Session Image"/> 
+            <div className="contact-session-secondary">
+                <img src={contactImage} alt="Contact Session"/> 
             </div>
         </section>
     );
