@@ -1,4 +1,4 @@
-body, html, section, div, h1, h2 {
+body, html, section, div, h1, h2, img, p, h4, h5 {
     margin: 0;
     padding: 0;
 }
@@ -12,7 +12,6 @@ body, html, section, div, h1, h2 {
     justify-content: center;
     align-items: center;
 
-    border: 2px solid red;
     background-color: #e9e9e9;
     clip-path: polygon(100% 100%, 52% 100%, 23% 92%, 0 100%, 0 9%, 25% 0, 64% 7%, 100% 0);
 }
@@ -55,7 +54,54 @@ body, html, section, div, h1, h2 {
 
 .testimonials-session-carrossel {
     width: 70%;
-    height: 40%;
+    height: 45%;
+}
 
-    border: 2px solid green;
+.carrossel-item {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel-image {
+    height: 100%;
+    width: 30%;
+
+    box-shadow: 15px 15px 15px #00000029;
+}
+
+.carrossel-text {
+    height: 90%;
+    width: 65%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: justify;
+    font: 400 16px Nunito Sans;
+
+    padding-right: 15px;
+    padding-left: 15px;
+    box-shadow: 20px 20px 15px #00000029;
+}
+
+.carrossel-text img {
+    width: 3%;
+    height: 10%;
+}
+
+h4 {
+    align-self: flex-start;
+    font: 700 20px Nunito Sans;
+    margin-bottom: 20px;
+}
+
+h5 {
+    align-self: flex-end;
 }
