@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  height: 5rem;
+}
+
+.background {
+  background-color: #E9E9E9;
+  box-shadow: 15px 15px 15px #00000029;
+  position: relative;
+  opacity: 1;
+  display: flex;
+  width: 10rem;
+  height: 2rem;
+  top: 2rem;
+  justify-content: center;
+}
+
+.title  {
+  font-family: Nunito Sans, Bold;
+  position: absolute;
+  left: 1.5rem;
+  z-index: 10;
+}
+
+.subtitle {
+  font-family: Nunito Sans;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.information-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.owner-picture {
+  width: 13rem;
+  box-shadow: 15px 15px 15px #00000029;
+}
+
+.about-us-text {
+  font-family: Nunito Sans;
+  width: 13rem;
+  flex-wrap: wrap;
+}
+
+.values-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.each-value {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.values-icons {
+  width: 7rem;
+}
+
+.values-text {
+  font-family: Nunito Sans;
+  width: 13rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+@media(min-width: 1024px) {
+  .background {
+    width: 13rem;
+  }
+  .title {
+    left: 3rem;
+  }
+
+  .information-container {
+    flex-direction: row-reverse;
+  }
+
+  .owner-picture {
+    width: 18rem;
+    right: 0rem;
+  }
+
+  .about-us-text {
+    width: 25rem;
+    position: absolute;
+    bottom: 16rem;
+    left: 6rem;
+  }
+ 
+  .values-container {
+    width: 28rem;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 7rem;
+    left: 4rem;
+  }
+
+  .each-value {
+    width: 9rem;
+  }
+
+  .values-icons {
+    width: 4.5rem;
+  }
+
+  .values-text {
+    font-size: 0.6rem;
+    width: 7.7rem;
+  }
+
+}

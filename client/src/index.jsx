@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom';
 
 import {
   Banner,
+  AboutUs,
 } from './components';
 
 function App() {
   return (
     <section className="app">
       <Banner />
+      <AboutUs/>
     </section>
   );
 }
