@@ -1,6 +1,7 @@
 body, html, section, div, h1, h2, img, p, h4, h5 {
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
 
 .testimonials-session {
@@ -13,7 +14,9 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
     align-items: center;
 
     background-color: #e9e9e9;
-    clip-path: polygon(100% 100%, 52% 100%, 23% 92%, 0 100%, 0 9%, 25% 0, 64% 7%, 100% 0);
+    /*clip-path: polygon(100% 100%, 52% 100%, 23% 92%, 0 100%, 0 9%, 25% 0, 64% 7%, 100% 0);*/
+    /* clip-path: polygon(100% 100%, 99% 1%, 1% 1%, 0 92%, 24% 100%, 52% 92%); */
+    clip-path: polygon(100% 100%, 100% 0, 68% 6%, 35% 0, 0 6%, 0 60%, 0 91%, 18% 100%, 39% 91%, 57% 100%);
 }
 
 .testimonials-session-title {
@@ -35,7 +38,7 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
     position: relative;
     top: 20px;
     
-    font: 700 36px Nunito Sans;
+    font: 700 3.6rem Nunito Sans;
     text-transform: uppercase;
 }
 
@@ -47,7 +50,7 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
     justify-content: center;
     align-items: center;
 
-    font: 600 14px Nunito Sans;
+    font: 600 2.2rem Nunito Sans;
     text-transform: uppercase;
     background-color: #ffffff;
 }
@@ -83,7 +86,7 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
     justify-content: center;
 
     text-align: justify;
-    font: 400 16px Nunito Sans;
+    font: 400 2.2rem Nunito Sans;
 
     padding-right: 15px;
     padding-left: 15px;
@@ -97,7 +100,7 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
 
 h4 {
     align-self: flex-start;
-    font: 700 20px Nunito Sans;
+    font: 700 2.5rem Nunito Sans;
     margin-bottom: 20px;
 }
 
@@ -106,14 +109,13 @@ h5 {
 }
 
 @media (max-width: 700px){
-    .testimonials-session {
-        justify-content: flex-start;
-    }
+    
     .testimonials-session-carrossel{
         height: 75%;
     }
     .carrossel-item {
         flex-direction: column;
+        height: 65vh;
     }
     .carrossel-image {
         width: 100%;
@@ -121,7 +123,7 @@ h5 {
     .carrossel-text {
         width: 80%;
         justify-content: flex-start;
-        font: 400 14px Nunito Sans;
+        font: 400 1.2rem Nunito Sans;
         padding-top: 20px;
     }
     .testimonials-session-title {
@@ -129,12 +131,12 @@ h5 {
         margin-bottom: 25px;
     }
     .testimonials-session-title h1 {
-        font: 700 18px Nunito Sans;
+        font: 700 2rem Nunito Sans;
         top: 15px;
     }
     .session-subtitle {
         height: 30%;
-        font: 600 6px Nunito Sans;
+        font: 600 1.2rem Nunito Sans;
         padding-right: 20px;
     }
     h4{
@@ -222,4 +224,8 @@ h5 {
 .slick-prev {
     left: -60px;
     right: -60px;
+}
+
+.slick-slide img {
+    display: unset;
 }
