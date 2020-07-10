@@ -207,3 +207,19 @@ h5 {
     -moz-osx-font-smoothing: grayscale;
     box-shadow: 20px 20px 15px #00000029;
 }
+
+
+.slick-prev:before {
+    content: url(./arrow-left.png);
+    opacity: 1;
+}
+
+.slick-next:before {
+    content: url(./arrow-right.png);
+    opacity: 1;
+}
+
+.slick-prev {
+    left: -60px;
+    right: -60px;
+}
