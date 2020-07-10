@@ -65,8 +65,6 @@ body, html, section, div, h1, h2, img, p, h4, h5 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
-    border: 2px solid red;
 }
 
 .carrossel-image {
@@ -149,4 +147,63 @@ h5 {
         width: 3%;
         height: 3%;
     }
+}
+
+.carrossel-dots{
+        position: absolute;
+        bottom: -25px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+}
+
+.carrossel-dots li {
+        position: relative;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+}
+
+.carrossel-dots li button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+}
+
+.carrossel-dots li.slick-active button:before {
+    opacity: .55;
+    color: black;
+    font-size: 22px;
+}
+
+.carrossel-dots li button:before {
+    font-family: 'slick';
+    font-size: 18px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    opacity: .25;
+    color: black;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-shadow: 20px 20px 15px #00000029;
 }
