@@ -40,7 +40,7 @@ function Testimonials() {
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
                                 exclusivos de qualidade e bom preço. Tudo de excelência. Sempre disponível e a disposição 
-                                para agradar as clientes. Hoje é minha amiga. Mora no coração.<img src={imgAspasD} alt="Aspas Direita"/></p>
+                                para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
                                 <h5>- Juazeiro (Bahia)</h5>    
                             </div>
                         </div>
