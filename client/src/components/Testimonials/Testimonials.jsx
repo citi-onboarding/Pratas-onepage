@@ -29,6 +29,7 @@ function Testimonials() {
             </div>
             <div className="testimonials-session-carrossel">
                 <Slider {...settings}>
+                    <div>
                     <div className="carrossel-item">
                         <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
                         <div className="carrossel-text">
@@ -41,6 +42,7 @@ function Testimonials() {
                              para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
                             <h5>- Juazeiro (Bahia)</h5>    
                         </div>
+                    </div>
                     </div>
                 </Slider>
             </div>
