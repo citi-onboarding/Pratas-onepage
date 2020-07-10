@@ -32,13 +32,13 @@ body {
 .title {
   font-family: Nunito Sans;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 
 .subtitle {
   font-family: Nunito Sans, Semibold;
-  font-size: 0.95rem;
+  font-size: 1rem;
   text-align: center;
   width: 85%;
 }
@@ -53,4 +53,18 @@ body {
   height: 2.8rem;
   align-self: center;
   margin-top: 5.2rem;
+}
+
+@media (min-width: 1024px){
+  .logo {
+    width: 8rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+  }
 }
