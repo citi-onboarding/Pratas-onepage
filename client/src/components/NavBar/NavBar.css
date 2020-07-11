@@ -43,3 +43,62 @@ body, html, header{
 p {
     font-size: 50rem;
 }
+
+@media (max-width: 650px) {
+    nav {
+        display: none;
+    }
+    .one,
+    .two,
+    .three {
+        background-color: #CBCBCB;
+        height: 4px;
+        width: 100%;
+        margin: 6px auto;
+
+        transition-duration: 0.3s;
+    }
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+    }
+    .menu-session.on {
+        width: 70vw;
+        height: 100vh;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 10;
+
+        background-color: #000000;
+        opacity: 0.9;
+    }
+    .menu-session.on nav {
+        display: block;
+    }
+    .menu-session.on .menu-toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 15px;
+    }
+    .menu-session.on .menu-toogle .three {
+        transform: scaleX(0.5);
+    }
+    .menu-session.on .nav-bar-menu {
+        text-align: center;
+        display: block;
+    }
+    .menu-session.on .nav-bar-menu a {
+        transition: 0.5s
+    }
+    .menu-session.on .nav-bar-menu li {
+        padding: 2rem;
+    }
+}
