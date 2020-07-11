@@ -5,14 +5,17 @@ import {
   Banner,
   AboutUs,
   Footer,
+  NavBar,
 } from './components';
 
 function App() {
   return (
     <section className="app">
-      <Banner />
+      <NavBar />
+      <Banner />      
       <AboutUs/>
       <Footer />
+
     </section>
   );
 }
