@@ -1,6 +1,7 @@
 body, html, section, div, h1, form, input, button { 
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
 
 h1 {
@@ -8,7 +9,7 @@ h1 {
 
     padding-left: 75px;
 
-    font: 700 46px Nunito Sans;
+    font: 700 4.6rem Nunito Sans;
     color: #e4e4e4;
     text-transform: uppercase;
 }
@@ -41,7 +42,7 @@ form {
 input {
     width: 95%;
 
-    font: 600 20px Nunito Sans;
+    font: 600 2rem Nunito Sans;
     color: #e4e4e4;
 
     background: transparent;
@@ -89,8 +90,19 @@ input {
     box-shadow: 15px 15px 5px #00000029;
     opacity: 0.41;
 }
+@media (max-width: 1250px) {
+    html {
+    font-size: 50%;
+    }
+    .first {
+        width: 95%;
+    }
+}
 
 @media (max-width: 700px){
+    html {
+        font-size: 45%;
+    }
     .contact-session {
         height: 60vh;
     }
@@ -111,14 +123,12 @@ input {
         width: 95%;
     }
     input {
-        font-size: 14px;
         margin-bottom: 5px;
         padding: 3px;
     }
     h1 {
         align-self: center;
         padding-left: 0px;
-        font-size: 20px;
     }
     form {
         display: flex;
