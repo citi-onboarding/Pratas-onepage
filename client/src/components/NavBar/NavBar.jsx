@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
 import logoNavBar from './logo-navbar.png';
+import iconTelefone from './icon-telefone.png';
+import iconFacebook from './icon-facebook.png';
+import iconInstagram from './icon-instagram.png';
+import iconEmail from './icon-email.png';
+
 import './NavBar.css';
 
 
@@ -33,6 +38,12 @@ function NavBar(){
                     <li><a href="#">Contatos</a></li>
                 </ul>
             </nav>
+            <div className="icons-menu">
+                <a href="#"><img src={iconTelefone} alt="Icon Telefone"/></a>
+                <a href="#"><img src={iconInstagram} alt="Icon Instagram"/></a>
+                <a href="#"><img src={iconFacebook} alt="Icon Facebook"/></a>
+                <a href="#"><img src={iconEmail} alt="Icon Email"/></a>
+            </div>
             </section>
         </header>
     );

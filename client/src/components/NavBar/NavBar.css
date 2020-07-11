@@ -3,7 +3,9 @@ body, html, header{
     padding: 0;
     font-size: 62.5%;
 }
-
+.icons-menu {
+    display: none;
+}
 .nav-bar {
     width: 100vw;
 
@@ -43,6 +45,11 @@ body, html, header{
 p {
     font-size: 50rem;
 }
+@media (max-width: 768px){
+    html{
+        font-size: 50%;
+    }
+}
 
 @media (max-width: 650px) {
     nav {
@@ -58,6 +65,12 @@ p {
 
         transition-duration: 0.3s;
     }
+    .menu-session.on .icons-menu {
+        display: block;
+    }
+    .menu-session.on .icons-menu a {
+        padding: 5px;
+    }
     .menu-toggle {
         width: 40px;
         height: 30px;
@@ -71,7 +84,8 @@ p {
         right: 0;
 
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
 
         z-index: 10;
@@ -94,6 +108,7 @@ p {
     .menu-session.on .nav-bar-menu {
         text-align: center;
         display: block;
+        padding: 0;
     }
     .menu-session.on .nav-bar-menu a {
         transition: 0.5s
