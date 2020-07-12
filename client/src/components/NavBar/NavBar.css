@@ -55,6 +55,14 @@ p {
     nav {
         display: none;
     }
+    .nav-bar {
+        justify-content: space-between;
+        height: 10vh;
+    }
+    img {
+        width: 60px;
+        margin-left: 15px;
+    }
     .one,
     .two,
     .three {
@@ -72,8 +80,10 @@ p {
         padding: 5px;
     }
     .menu-toggle {
-        width: 40px;
+        width: 35px;
         height: 30px;
+        
+        margin-right: 15px;
     }
     .menu-session.on {
         width: 70vw;
