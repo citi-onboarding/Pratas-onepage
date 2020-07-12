@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+
+body {
+  background-color: #E9E9E9;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-container {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.background {
+  background-color: white;
+  box-shadow: 15px 15px 15px #00000029;
+  position: relative;
+  opacity: 1;
+  display: flex;
+  width: 27rem;
+  height: 2.7rem;
+  top: 1rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.title  {
+  font-family: Nunito Sans;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -0.5rem;
+  z-index: 10;
+}
+
+.subtitle {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: center;
+  position: absolute;
+}
+
+.category-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: fit-content;
+  margin-bottom: 0.7rem;
+  margin-top: 4rem;
+}
+
+.products-category {
+  cursor: pointer;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Nunito Sans;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.products-images-container {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-evenly;
+  width: 80%;
+}
+
+.products-images {
+  width: 15rem;
+}
+
+.products-button {
+  cursor: pointer;
+  font-family: Nunito Sans;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 0.12rem solid black;
+  width: 11.5rem;
+  height: 2.6rem;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
