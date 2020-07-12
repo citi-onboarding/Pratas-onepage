@@ -44,6 +44,7 @@ body {
 }
 
 .products-button {
+  cursor: pointer;
   font-family: Nunito Sans;
   font-weight: bolder;
   font-size: 0.9rem;
