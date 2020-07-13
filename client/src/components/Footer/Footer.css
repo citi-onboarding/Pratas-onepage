@@ -1,20 +1,21 @@
 body, html, a, p, h3, img {
     margin: 0;
     padding: 0;
+    font-size: 62.5%;
 }
 
 h3{
-    font-size: 16x;
-    margin-bottom: 15px;
+    font-size: 2.2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .sup {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 footer {
     width: 100%;
-    height: 30vh;
 
     display: flex;
     flex-direction: column;
@@ -25,8 +26,7 @@ footer {
 }
 
 .logoFooter {
-    width: 10%;
-    height: 60%;
+    width: 10%; 
 }
 
 .footer-session-main {
@@ -49,7 +49,7 @@ footer {
     margin-bottom: 30px;
 
     text-align: left;
-    font: 400 14px Nunito;
+    font: 400 2.2rem Nunito Sans;
 
     border-left: 2px solid #707070;
 }
@@ -71,12 +71,10 @@ div .icons-footer {
 
 .icon-footer {
     width: 65%;
-    height: 85%;
 }
 
 .icon-portal{
     width: 60%;
-    height: 30%;
 }
 
 .footer-session-secondary {
@@ -89,12 +87,12 @@ div .icons-footer {
 
     padding-top: 10px;
 
-    font: 400 14px Nunito;
+    font: 400 2.2rem Nunito Sans;
 }
 
-@media (max-width: 700px){
-    footer{
-        height: 40vh;
+@media (max-width: 768px){
+    html {
+        font-size: 30%;
     }
     h3{
         margin-top: 5px;
@@ -104,7 +102,8 @@ div .icons-footer {
         margin-bottom:5px;
     }
     .logoFooter{
-        margin-top: 0px;
+        width: 65px;
+        margin-top: 15px;
     }
     .footer-session-main {
         flex-direction: column;
@@ -112,12 +111,9 @@ div .icons-footer {
         justify-content: center;
     }
     .footer-session-secondary {
-        height: 30%;
-
         flex-direction: column;
         justify-content: flex-start;
         padding-top: 10px;
-        font-size: 12px;
     }
     .footer-session-main div {
         border-left: 0;
@@ -125,13 +121,15 @@ div .icons-footer {
         margin-bottom: 0;
         text-align: center;
         align-items: center;
-        font-size: 12px;
-    }
-    .logoFooter {
-        width: 20%;
-        height: 20%;
     }
     div .icons-footer {
         justify-content: center;
+    }
+    .icon-footer {
+        width: 50%;
+    }
+    
+    .icon-portal{
+        width: 50%;
     }
 }
