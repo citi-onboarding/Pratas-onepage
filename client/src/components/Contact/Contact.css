@@ -12,7 +12,7 @@ h1 {
 
     padding-bottom: 75px;
 
-    font: 700 4rem Nunito Sans;
+    font: 700 3.4rem Nunito Sans;
     color: #e4e4e4;
     text-transform: uppercase;
 }
@@ -45,7 +45,7 @@ form {
 input {
     width: 95%;
 
-    font: 400 2.5rem Nunito Sans;
+    font: 400 1.9rem Nunito Sans;
     color: #e4e4e4;
 
     background: transparent;
@@ -84,6 +84,10 @@ input {
     background: #FFFFFFCC;
 }
 
+.submit:hover{
+    box-shadow: 15px 15px 5px #00000029;
+}
+
 .contact-session-secondary {
     width: 40%;
     height: 100%;
@@ -105,7 +109,7 @@ input {
 
 @media (max-width: 768px){
     html {
-        font-size: 35%;
+        font-size: 40%;
     }
     .contact-session {
         height: 60vh;
@@ -125,7 +129,7 @@ input {
         width: 95%;
     }
     input {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         padding: 5px;
     }
     h1 {
@@ -136,6 +140,5 @@ input {
     form {
         display: flex;
         flex-direction: column;
-        margin-top: 18px;
     }
 }
