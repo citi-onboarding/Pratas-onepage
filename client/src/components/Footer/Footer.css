@@ -5,7 +5,7 @@ body, html, a, p, h3, img {
 }
 
 h3{
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
@@ -37,6 +37,9 @@ footer {
     justify-content: space-around;
     align-items: center;
 
+    padding-top: 10px;
+    padding-bottom: 5px;
+
     border-bottom: 2px solid #707070;
 }
 
@@ -49,7 +52,7 @@ footer {
     margin-bottom: 30px;
 
     text-align: left;
-    font: 400 2.2rem Nunito Sans;
+    font: 400 1.8rem Nunito Sans;
 
     border-left: 2px solid #707070;
 }
@@ -87,12 +90,12 @@ div .icons-footer {
 
     padding-top: 10px;
 
-    font: 400 2.2rem Nunito Sans;
+    font: 400 1.8rem Nunito Sans;
 }
 
 @media (max-width: 768px){
     html {
-        font-size: 30%;
+        font-size: 50%;
     }
     h3{
         margin-top: 5px;
