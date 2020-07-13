@@ -1,14 +1,13 @@
 import React from "react";
 
-import contactImage from './contact-image.png'
 import './Contact.css';
 
 function Contact(){
     return(
         <section className="contact-session">
             <div className="contact-session-form">
-                <h1>Contato</h1>
                 <form action="" target="_blank">
+                    <h1>Contato</h1>
                     <input type="text" placeholder="Nome" className="first" id="first"/>
                     <input type="text" placeholder="Telefone" className="first"/><br/>
                     <input type="text" placeholder="Email"/><br/>
@@ -18,7 +17,6 @@ function Contact(){
                 </form>
             </div> 
             <div className="contact-session-secondary">
-                <img src={contactImage} alt="Contact Session"/> 
             </div>
         </section>
     );

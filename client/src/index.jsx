@@ -6,6 +6,7 @@ import {
   AboutUs,
   Contact,
   Footer,
+  Contact,
 } from './components';
 
 function App() {
