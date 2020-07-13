@@ -10,16 +10,14 @@ import './NavBar.css';
 
 
 function NavBar(){
-
-    const [menuSession, setSession] = useState();
     const [show, setShow] = useState(true);
 
     return(
         <header className="nav-bar">
-            <img src={logoNavBar} alt="Logo NavBar"/>
+            <img src={logoNavBar} alt="Logo NavBar" className="logo-header"/>
             <section className="menu-session">
             <div className="menu-toggle" onClick={()=>{
-                setSession(document.querySelector('.menu-session'));
+                const menuSession = document.querySelector('.menu-session');
                 if (menuSession !== undefined){
                     menuSession.classList.toggle("on", show);
                     setShow(!show);

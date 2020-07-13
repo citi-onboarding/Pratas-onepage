@@ -45,13 +45,11 @@ body, html, header{
 p {
     font-size: 50rem;
 }
-@media (max-width: 768px){
-    html{
+
+@media (max-width: 768px) {
+    html {
         font-size: 50%;
     }
-}
-
-@media (max-width: 650px) {
     nav {
         display: none;
     }
@@ -59,7 +57,7 @@ p {
         justify-content: space-between;
         height: 10vh;
     }
-    img {
+    .logo-header {
         width: 60px;
         margin-left: 15px;
     }
@@ -111,6 +109,7 @@ p {
         top: 0;
         left: 0;
         margin-left: 15px;
+        transition-duration: 0.8s;
     }
     .menu-session.on .menu-toogle .three {
         transform: scaleX(0.5);
