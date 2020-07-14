@@ -91,10 +91,10 @@ const Product = () => {
 
   return (
     <section>
-      <div className="title-container">
-        <h1 className="title">NOSSOS PRODUTOS</h1>
-        <div className="background">
-          <h2 className="subtitle">TRABALHAMOS SOMENTE COM JOIAS EM PRATA</h2>
+      <div className="title-container-products">
+        <h1 className="title-products">NOSSOS PRODUTOS</h1>
+        <div className="background-products">
+          <h2 className="subtitle-products">TRABALHAMOS SOMENTE COM JOIAS EM PRATA</h2>
         </div>
       </div>
 

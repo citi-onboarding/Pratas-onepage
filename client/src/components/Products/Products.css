@@ -14,14 +14,14 @@ section {
   flex-direction: column;
 }
 
-.title-container {
+.title-container-products {
   display: flex;
   height: 5rem;
   align-items: center;
   justify-content: center;
 }
 
-.background {
+.background-products {
   background-color: white;
   box-shadow: 15px 15px 15px #00000029;
   position: relative;
@@ -34,7 +34,7 @@ section {
   align-items: center;
 }
 
-.title  {
+.title-products  {
   font-family: Nunito Sans;
   font-size: 1.5rem;
   position: absolute;
@@ -42,7 +42,7 @@ section {
   z-index: 10;
 }
 
-.subtitle {
+.subtitle-products {
   font-family: Nunito Sans;
   font-weight: 500;
   font-size: 1rem;
@@ -114,17 +114,17 @@ section {
 
 @media (max-width: 768px) {
 
-  .background {
+  .background-products {
     width: 18rem;
     height: 2.5rem;
   }
   
-  .title  {
+  .title-products  {
     font-size: 1.3rem;
     top: 0rem;
   }
   
-  .subtitle {
+  .subtitle-products {
     font-size: 0.7rem;
   }
 
@@ -182,17 +182,17 @@ section {
 }
 
 @media (min-width: 760px) {
-  .background {
+  .background-products {
     width: 22rem;
     height: 3rem;
   }
   
-  .title  {
+  .title-products {
     font-size: 1.8rem;
     top: -1.2rem;
   }
   
-  .subtitle {
+  .subtitle-products {
     font-size: 0.8rem;
   }
 
