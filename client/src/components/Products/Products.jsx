@@ -30,7 +30,7 @@ const Product = () => {
     loadProducts();
   }, []);
 
-  const [filter, setFilter] = useState('');
+  const [filter, setFilter] = useState('colar');
 
 
   const productsImages = [
@@ -84,6 +84,11 @@ const Product = () => {
     };
   }
 
+  const changeStyle = (type) => {
+    if (filter === type ){
+    return({ backgroundColor:'black' })};
+  }
+
   return (
     <section>
       <div className="title-container">
@@ -98,30 +103,35 @@ const Product = () => {
           className="products-category"
           onClick= {() => handleFilterChange('colar')}>
           COLARES
+          <div className="selected-filter-line" style={changeStyle('colar')}></div>
         </button>
 
         <button 
           className="products-category"
           onClick={() => handleFilterChange('brinco')}>
           BRINCOS
+          <div className="selected-filter-line" style={changeStyle('brinco')}></div>
         </button>
 
         <button 
           className="products-category"
           onClick={() => handleFilterChange('anel')}>
           ANÉIS
+          <div className="selected-filter-line" style={changeStyle('anel')}></div>
         </button>
   
         <button 
           className="products-category"
           onClick={() => handleFilterChange('argola')}> 
           ARGOLAS
+          <div className="selected-filter-line" style={changeStyle('argola')} ></div>
         </button>
 
         <button 
           className="products-category"
           onClick={() => handleFilterChange('pulseira')}>
           PULSEIRAS
+          <div className="selected-filter-line" style={changeStyle('pulseira')}></div>
         </button>
       </div>
 
@@ -131,7 +141,7 @@ const Product = () => {
 
       <div  className="products-images-container-web">
         
-        {imagesList.filter((eachItem) => !filter || filter === eachItem.type).map((product) => (
+        {imagesList.filter((eachItem) => !filter || filter === eachItem.type).slice(0,4).map((product) => (
           <ProductsImages key={product.name} product={product} />)
         )}
 

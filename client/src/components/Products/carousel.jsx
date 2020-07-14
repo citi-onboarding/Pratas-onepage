@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 
-import Necklace1 from './images/necklace/necklace.png';
-import Necklace2 from './images/necklace/necklace2.png';
-import Necklace3 from './images/necklace/necklace3.png';
-import Necklace4 from './images/necklace/necklace4.png';
+import nextArrow from './images/arrows/next-arrow.svg'
+import prevArrow from './images/arrows/prev-arrow.svg'
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', background: 'red' }}
-      onClick={onClick}
-    />
+      style={{ ...style, justifyContent:'center', alignContent:'center', width:'0.5rem', display: 'flex', right:'4rem' }}
+      onClick={onClick}>
+      <img src={ nextArrow } alt=""/>
+      </div> 
   );
 }
 
@@ -22,9 +21,10 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', background: 'green' }}
-      onClick={onClick}
-    />
+      style={{ ...style,  justifyContent:'center', alignContent:'center', zIndex:10, width:'0.5rem', display: 'flex',left:'2rem' }}
+      onClick={onClick}>
+      <img src={ prevArrow } alt=""/>
+      </div> 
   );
 }
 
