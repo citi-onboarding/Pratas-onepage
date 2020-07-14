@@ -13,7 +13,7 @@ function Contact(){
                     <input type="text" placeholder="Email"/><br/>
                     <input type="text" placeholder="Como nos conheceu?"/><br/>
                     <input type="textarea" placeholder="Mensagem" className="message"/><br/>
-                    <input type="submit" className="submit"/>
+                    <input type="submit" className="submit" placeholder="Enviar"/>
                 </form>
             </div> 
             <div className="contact-session-secondary">
