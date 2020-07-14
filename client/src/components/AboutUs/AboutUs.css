@@ -93,10 +93,18 @@ body {
   }
 
   .background {
-    width: 13rem;
+    width: 17rem;
+    height: 3rem;
   }
+
   .title {
-    left: 3rem;
+    font-size: 1.7rem;
+    left: 3.5rem;
+    top: -0.9rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
   }
 
   .information-container {
