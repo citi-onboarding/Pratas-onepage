@@ -11,6 +11,7 @@ body {
 }
 
 .title-container {
+  display: flex;
   height: 5rem;
   align-items: center;
 }
@@ -39,7 +40,9 @@ body {
   font-family: Nunito Sans;
   font-size: 0.6rem;
   justify-content: center;
+  align-self: center;
   position: absolute;
+  margin: 0;
 }
 
 .owner-picture {
@@ -88,23 +91,27 @@ body {
 }
 
 @media(min-width: 1024px) {
+  html {
+    font-size: 62,5%;
+  }
+
   .about-us {
     display: flex;
   }
 
   .background {
-    width: 17rem;
-    height: 3rem;
+    width: 25rem;
+    height: 3.5rem;
   }
 
   .title {
-    font-size: 1.7rem;
-    left: 3.5rem;
-    top: -0.9rem;
+    font-size: 3rem;
+    left: 4rem;
+    top: -2.8rem;
   }
 
   .subtitle {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
 
   .information-container {
@@ -126,9 +133,11 @@ body {
   }
 
   .about-us-text {
+    font-size: 1.3rem;
     width: 90%;
     bottom: 16rem;
     left: 6rem;
+    
   }
  
   .values-container {
@@ -143,12 +152,12 @@ body {
   }
 
   .values-icons {
-    width: 5.5rem;
+    width: 7rem;
   }
 
   .values-text {
-    font-size: 0.7rem;
-    width: 8.2rem;
+    font-size: 0.9rem;
+    width: 9rem;
   }
 
 }
