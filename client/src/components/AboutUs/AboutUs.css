@@ -91,6 +91,12 @@ body {
 }
 
 @media(min-width: 1024px) {
+  
+  section {
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 68% 100%, 20% 88%, 0% 100%);
+    padding-bottom: 3.6rem;
+  }
+
   html {
     font-size: 62,5%;
   }
@@ -107,7 +113,7 @@ body {
   .title {
     font-size: 3rem;
     left: 4rem;
-    top: -2.8rem;
+    top: -2.6rem;
   }
 
   .subtitle {
@@ -157,7 +163,7 @@ body {
 
   .values-text {
     font-size: 0.9rem;
-    width: 9rem;
+    width: 9.5rem;
   }
 
 }
