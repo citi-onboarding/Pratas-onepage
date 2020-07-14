@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom';
 import {
   Banner,
   AboutUs,
-  Contact,
   Footer,
 } from './components';
 
@@ -13,7 +12,6 @@ function App() {
     <section className="app">
       <Banner />
       <AboutUs/>
-      <Contact />
       <Footer />
     </section>
   );
