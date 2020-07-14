@@ -3,15 +3,12 @@
 @import "~slick-carousel/slick/slick-theme.css";
 
 
-body {
+.products {
+  display: flex;
+  flex-direction: column;
   background-color: #E9E9E9;
   margin: 0;
   padding: 0;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
 }
 
 .title-container-products {
