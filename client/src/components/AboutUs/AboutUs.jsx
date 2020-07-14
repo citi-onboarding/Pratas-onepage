@@ -22,9 +22,9 @@ const AboutUs = () => {
   return(
     <section className="about-us">
       <div className="title-container">
-        <h1 className="title">SOBRE NÓS</h1>
+        <h1 className="title-about-us">SOBRE NÓS</h1>
         <div className="background">
-          <h2 className="subtitle">CONHEÇA NOSSA HISTÓRIA</h2>
+          <h2 className="subtitle-about-us">CONHEÇA NOSSA HISTÓRIA</h2>
         </div>
       </div>
 

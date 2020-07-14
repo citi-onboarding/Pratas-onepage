@@ -14,6 +14,7 @@ body {
   display: flex;
   height: 5rem;
   align-items: center;
+  position: relative;
 }
 
 .background {
@@ -28,15 +29,16 @@ body {
   justify-content: center;
 }
 
-.title  {
+.title-about-us {
   font-family: Nunito Sans;
   font-weight: bold;
-  position: absolute;
+  position: absolute; 
+  top: 1.45rem;                                                                                                                    
   left: 1.5rem;
   z-index: 10;
 }
 
-.subtitle {
+.subtitle-about-us {
   font-family: Nunito Sans;
   font-size: 0.6rem;
   justify-content: center;
@@ -52,12 +54,12 @@ body {
   width: 13rem;
   box-shadow: 15px 15px 15px #00000029;
 }
+
 .information-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 .about-us-text {
   font-family: Nunito Sans;
@@ -93,8 +95,9 @@ body {
 @media(min-width: 1024px) {
   
   section {
-    clip-path: polygon(0 0, 100% 0, 100% 87%, 68% 100%, 20% 88%, 0% 100%);
-    padding-bottom: 3.6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 92%, 68% 100%, 30% 95%, 0% 100%);
+    padding-bottom: 4rem;
+    padding-top: 2rem;
   }
 
   html {
@@ -106,18 +109,22 @@ body {
   }
 
   .background {
-    width: 25rem;
-    height: 3.5rem;
+    width: 20rem;
+    height: 3rem;
   }
 
-  .title {
-    font-size: 3rem;
+  .title-container {
+    padding-bottom: 2rem;
+  }
+
+  .title-about-us {
+    font-size: 2rem;
     left: 4rem;
-    top: -2.6rem;
+    top: -0.6rem;
   }
 
-  .subtitle {
-    font-size: 1.5rem;
+  .subtitle-about-us {
+    font-size: 1rem;
   }
 
   .information-container {
@@ -139,9 +146,8 @@ body {
   }
 
   .about-us-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     width: 90%;
-    bottom: 16rem;
     left: 6rem;
     
   }
@@ -150,7 +156,6 @@ body {
     width: 80%;
     flex-direction: row;
     justify-content: space-between;
-    bottom: 7rem;
   }
 
   .each-value {
@@ -158,11 +163,11 @@ body {
   }
 
   .values-icons {
-    width: 7rem;
+    width: 6rem;
   }
 
   .values-text {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     width: 9.5rem;
   }
 
