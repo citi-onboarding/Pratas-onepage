@@ -91,7 +91,7 @@ input::placeholder {
     background: #FFFFFFCC;
 }
 
-.submit:hover{
+input:hover{
     box-shadow: 15px 15px 5px #00000029;
 }
 
