@@ -23,55 +23,55 @@ function Testimonials() {
     return(
         <section className="testimonials-session">
             <div className="testimonials-session-title">
-                <h1>Depoimentos</h1>
+                <h1 className="testimonial-title">Depoimentos</h1>
                 <div className="session-subtitle">
-                    <h2>Veja o que nossos clientes falam</h2>
+                    <h2 className="calling-to-testimonial">Veja o que nossos clientes falam</h2>
                 </div>
             </div>
             <div className="testimonials-session-carrossel">
                 <Slider {...settings}>
-                    <div>
-                        <div className="carrossel-item">
-                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
-                            <div className="carrossel-text">
-                                <h4>Josimeire Pinheiro</h4>
-                                <p><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
+                    <div className="carousel-div-between-items">
+                        <div className="carrossel-item-testimonial">
+                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image-testimonial"/>
+                            <div className="carrossel-text-testimonial">
+                                <h4 className="client-name-testimonial">Josimeire Pinheiro</h4>
+                                <p className="testimonial-itself"><img src={imgAspasE} className="aspas-testimonial" alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
                                 Eu não uso apenas acessórios, e sim alegorias e adereços... rsrsrs. 
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
                                 exclusivos de qualidade e bom preço. Tudo de excelência. Sempre disponível e a disposição 
-                                para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
-                                <h5>- Juazeiro (Bahia)</h5>    
+                                para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} className="aspas-testimonial" alt="Aspas Direita"/></p>
+                                <h5 className="city-client-testimonial">- Juazeiro (Bahia)</h5>    
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="carrossel-item">
-                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
-                            <div className="carrossel-text">
-                                <h4>Josimeire Pinheiro</h4>
-                                <p><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
+                    <div className="carousel-div-between-items">
+                        <div className="carrossel-item-testimonial">
+                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image-testimonial"/>
+                            <div className="carrossel-text-testimonial">
+                                <h4 className="client-name-testimonial">Josimeire Pinheiro</h4>
+                                <p className="testimonial-itself"><img src={imgAspasE} className="aspas-testimonial" alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
                                 Eu não uso apenas acessórios, e sim alegorias e adereços... rsrsrs. 
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
                                 exclusivos de qualidade e bom preço. Tudo de excelência. Sempre disponível e a disposição 
-                                 para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
-                                <h5>- Juazeiro (Bahia)</h5>    
+                                 para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} className="aspas-testimonial" alt="Aspas Direita"/></p>
+                                <h5 className="city-client-testimonial">- Juazeiro (Bahia)</h5>    
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <div className="carrossel-item">
-                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
-                            <div className="carrossel-text">
-                                <h4>Josimeire Pinheiro</h4>
-                                <p><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
+                    <div className="carousel-div-between-items">
+                        <div className="carrossel-item-testimonial">
+                            <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image-testimonial"/>
+                            <div className="carrossel-text-testimonial">
+                                <h4 className="client-name-testimonial">Josimeire Pinheiro</h4>
+                                <p className="testimonial-itself"><img src={imgAspasE} className="aspas-testimonial" alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
                                 Eu não uso apenas acessórios, e sim alegorias e adereços... rsrsrs. 
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
                                 exclusivos de qualidade e bom preço. Tudo de excelência. Sempre disponível e a disposição 
-                                 para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
-                                <h5>- Juazeiro (Bahia)</h5>    
+                                 para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} className="aspas-testimonial" alt="Aspas Direita"/></p>
+                                <h5 className="city-client-testimonial">- Juazeiro (Bahia)</h5>    
                             </div>
                         </div>
                     </div>

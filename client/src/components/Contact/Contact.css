@@ -1,13 +1,5 @@
-body, html, section, div, h1, form, input, button { 
-    margin: 0;
-    padding: 0;
-}
 
-html {
-    font-size: 62.5%;
-}
-
-h1 {
+.title-contact {
     align-self: flex-start;
 
     padding-bottom: 75px;
@@ -15,6 +7,9 @@ h1 {
     font: 700 3.4rem Nunito Sans;
     color: #e4e4e4;
     text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
 }
 .contact-session {
     width: 100%;
@@ -25,7 +20,10 @@ h1 {
 
     background-color: #000000;
 
+    margin: 0;
+    padding: 0;
 }
+
 .contact-session-form {
     width: 60%;
     height: 100%;
@@ -36,10 +34,16 @@ h1 {
     align-items: center;
 
     background-color: #1B1B1B;
+
+    margin: 0;
+    padding: 0;
 }
 
-form {
+.form-contact {
     width: 80%;
+
+    margin: 0;
+    padding: 0;
 }
 
 input {
@@ -56,6 +60,9 @@ input {
 
     cursor: pointer;
     outline: none;
+
+    margin: 0;
+    padding: 0;
 }
 
 input::placeholder {
@@ -65,7 +72,7 @@ input::placeholder {
     font-weight: 400;
 }
 
-.first{
+.first-line{
     width: 40%;
 }
 
@@ -106,6 +113,9 @@ input:hover{
     opacity: 0.5;
 
     box-shadow: 15px 15px 5px #00000029;
+
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 1249px){
@@ -115,9 +125,6 @@ input:hover{
 }
 
 @media (max-width: 768px){
-    html {
-        font-size: 40%;
-    }
     .contact-session {
         height: 60vh;
     }
@@ -139,12 +146,12 @@ input:hover{
         margin-bottom: 10px;
         padding: 5px;
     }
-    h1 {
+    .title-contact {
         align-self: center;
         padding-left: 0px;
         padding-bottom: 40px;
     }
-    form {
+    .form-contact {
         display: flex;
         flex-direction: column;
     }

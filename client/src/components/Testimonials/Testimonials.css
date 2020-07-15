@@ -1,13 +1,7 @@
-body, html, section, div, h1, h2, img, p, h4, h5 {
+.testimonials-session {
     margin: 0;
     padding: 0;
-    
-}
-html {
-    font-size: 62.5%;
-}
 
-.testimonials-session {
     width: 100%;
     height: 100vh;
 
@@ -36,7 +30,7 @@ html {
     box-shadow: 20px 20px 15px #00000029;
 }
 
-.testimonials-session-title h1 {
+.testimonials-title {
     position: relative;
     top: 20px;
     
@@ -44,6 +38,9 @@ html {
     font-size: 3.6rem;
     font-weight: 700;
     text-transform: uppercase;
+
+    margin: 0;
+    padding: 0;
 }
 
 .session-subtitle {
@@ -67,9 +64,12 @@ html {
 .testimonials-session-carrossel {
     width: 77%;
     height: 45%;
+
+    margin: 0;
+    padding: 0;
 }
 
-.carrossel-item {
+.carrossel-item-testimonial {
     width: 100%;
     height: 100%;
 
@@ -77,15 +77,26 @@ html {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+
+    margin: 0;
+    padding: 0;
 }
 
-.carrossel-image {
+.carousel-div-between-items {
+    margin: 0;
+    padding: 0;
+}
+
+.carrossel-image-testimonial {
     width: 30%;
+
+    margin: 0;
+    padding: 0;
 
     box-shadow: 15px 15px 15px #00000029;
 }
 
-.carrossel-text {
+.carrossel-text-testimonial {
     height: 90%;
     width: 65%;
 
@@ -102,50 +113,66 @@ html {
     padding-right: 15px;
     padding-left: 15px;
     box-shadow: 9px 9px 15px #00000029;
+
+    margin: 0;
 }
 
-.carrossel-text img {
+.aspas-testimonial {
     width: 3%;
+
+    margin: 0;
+    padding: 0;
 }
 
-h2 {
+.testimonial-itself {
+    margin: 0;
+    padding: 0; 
+}
+
+.calling-to-testimonial {
     font-size: 1.8rem;
     font-weight: 600;
+
+    margin: 0;
+    padding: 0;
 }
 
-h4 {
+.client-name-testimonial{
     align-self: flex-start;
     font-family: Nunito Sans;
     font-size: 2.1rem;
     font-weight: 700;
     margin-bottom: 20px;
+
+    margin: 0;
+    padding: 0;
 }
 
-h5 {
+.city-client-testimonial {
     font-size: 2.1rem;
     font-weight: 700;
 
     align-self: flex-end;
+
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px){
-    html {
-        font-size: 35%;
-    }
     .testimonials-session {
         clip-path: polygon(31% 95%, 0 100%, 0 6%, 35% 0, 68% 7%, 100% 0, 100% 96%, 58% 100%);
     }
     .testimonials-session-carrossel{
         height: 75%;
     }
-    .carrossel-item {
+    .carrossel-item-testimonial {
         flex-direction: column;
     }
-    .carrossel-image {
+    .carrossel-image-testimonial {
         width: 33vh;
         box-shadow: none;
     }
-    .carrossel-text {
+    .carrossel-text-testimonial {
         width: 80%;
         justify-content: flex-start;
         padding-top: 20px;
@@ -155,17 +182,19 @@ h5 {
         margin-bottom: 25px;
         padding-right: 10px;
     }
-    .testimonials-session-title h1 {
+    .testimonials-title {
         top: 15px;
     }
     .session-subtitle {
         height: 30%;
         padding: 8px;
+
+        margin: 0;
     }
-    h4 {
+    .client-name-testimonial{
         margin-bottom: 0;
     }
-    h5 {
+    .city-client-testimonial {
         align-self: flex-start;
     }
 }
@@ -263,4 +292,6 @@ h5 {
 
 .slick-slide img {
     display: unset;
+    margin: 0;
+    padding: 0;
 }

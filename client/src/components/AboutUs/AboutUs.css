@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+.about-us {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 }
 
-.about-us {
-  display: flex;
-  flex-direction: column;
-}
-
-.title-container {
+.title-container-about-us {
   display: flex;
   height: 5rem;
   align-items: center;
   position: relative;
 }
 
-.background {
+.background-box-about-us {
   background-color: #E9E9E9;
   box-shadow: 15px 15px 15px #00000029;
   position: relative;
@@ -99,21 +96,16 @@ body {
     padding-bottom: 4rem;
     padding-top: 2rem;
   }
-
-  html {
-    font-size: 62,5%;
-  }
-
   .about-us {
     display: flex;
   }
 
-  .background {
+  .background-box-about-us {
     width: 20rem;
     height: 3rem;
   }
 
-  .title-container {
+  .title-container-about-us {
     padding-bottom: 2rem;
   }
 

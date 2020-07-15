@@ -21,12 +21,12 @@ function Banner() {
   return(
     <section className="banner-container">
       <div className="brand-container">
-        <img className="logo" src={Logo} alt="logo"/>
-        <h1 className="title">JAQUE MENCK PRATAS</h1>
-        <p className="subtitle">Joias em prata de diferentes lugares do mundo</p>
+        <img className="logo-banner" src={Logo} alt="logo"/>
+        <h1 className="title-banner">JAQUE MENCK PRATAS</h1>
+        <p className="subtitle-banner">Joias em prata de diferentes lugares do mundo</p>
       </div>
 
-      <button className="products-button">
+      <button className="products-button-banner">
         VEJA NOSSOS PRODUTOS
       </button>
     </section>

@@ -21,9 +21,9 @@ const AboutUs = () => {
 
   return(
     <section id="about-us" className="about-us">
-      <div className="title-container">
+      <div className="title-container-about-us">
         <h1 className="title-about-us">SOBRE NÓS</h1>
-        <div className="background">
+        <div className="background-box-about-us">
           <h2 className="subtitle-about-us">CONHEÇA NOSSA HISTÓRIA</h2>
         </div>
       </div>
