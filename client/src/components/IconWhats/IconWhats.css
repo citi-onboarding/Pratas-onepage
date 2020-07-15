@@ -16,6 +16,10 @@
 
 @media (max-width: 768px) {
     .whatsapp-icon {
-        display: none;
+        bottom: 60px;
+        right: 30px;
+    }
+    .icon {
+        width: 60px;
     }
 }
