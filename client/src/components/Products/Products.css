@@ -9,6 +9,7 @@
   background-color: #E9E9E9;
   margin: 0;
   padding: 0;
+  top:-1rem;
 }
 
 .title-container-products {
@@ -34,7 +35,8 @@
 
 .title-products  {
   font-family: Nunito Sans;
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: black;
   position: absolute;
   top: 0rem;
   z-index: 10;
@@ -118,7 +120,7 @@
   }
   
   .title-products  {
-    font-size: 1.3rem;
+    font-size: 2rem;
     top: 0rem;
   }
   
@@ -181,17 +183,18 @@
 
 @media (min-width: 760px) {
   .background-products {
-    width: 22rem;
-    height: 3rem;
+    width: 32rem;
+    height: 5rem;
   }
   
   .title-products {
-    font-size: 1.8rem;
-    top: -1.2rem;
+    font-size: 2.5rem;
+    top: -0.6rem;
   }
   
   .subtitle-products {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
+    align-items: center;
   }
 
   .products-category {
