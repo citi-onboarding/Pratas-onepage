@@ -35,7 +35,7 @@ function Testimonials() {
                             <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
                             <div className="carrossel-text">
                                 <h4 className="text-people">Josimeire Pinheiro</h4>
-                                <p><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
+                                <p className="text-testimonial"><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
                                 Eu não uso apenas acessórios, e sim alegorias e adereços... rsrsrs. 
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
