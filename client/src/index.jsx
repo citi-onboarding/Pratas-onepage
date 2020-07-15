@@ -3,21 +3,22 @@ import ReactDOM from 'react-dom';
 
 import {
   Banner,
+  Products,
   AboutUs,
-  NavBar,
-  Product,
   Footer,
+  NavBar,
 } from './components';
 
 function App() {
   return (
     <section className="app">
       <NavBar />
-      <Banner />      
+      <Banner />   
+      <Products />   
       <AboutUs/>
-      <Product />
       <Footer />
     </section>
   );
+}
 
 ReactDOM.render(<App />, document.getElementById('root'))

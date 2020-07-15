@@ -6,22 +6,10 @@ import Necklace2 from './images/necklace/necklace2.png';
 import Necklace3 from './images/necklace/necklace3.png';
 import Necklace4 from './images/necklace/necklace4.png';
 
-<<<<<<< HEAD
-// import Slider from 'react-slick';
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-
-import Necklace1 from './images/necklace/necklace.png';
-import Necklace2 from './images/necklace/necklace2.png';
-import Necklace3 from './images/necklace/necklace3.png';
-import Necklace4 from './images/necklace/necklace4.png';
-
-=======
->>>>>>> 9d28968... created the carousel and the filter
 import './Products.css';
 import ProductsImages from './images/images';
 
-import Carousel from "./carousel"
+import Carousel from "./carousel";
 
 const Product = () => {
   const [imagesList, setImagesList] = useState([
