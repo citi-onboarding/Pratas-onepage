@@ -6,10 +6,16 @@
 }
 
 .icon {
-    width: 20px;
+    width: 100px;
     justify-content: center;
 }
 
 .icon-link{
     color: transparent;
+}
+
+@media (max-width: 768px) {
+    .whatsapp-icon {
+        display: none;
+    }
 }
