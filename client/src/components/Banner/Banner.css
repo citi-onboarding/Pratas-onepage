@@ -1,16 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800&display=swap');
 
-#root {
-  width: 100%;
-}
-
-body {
+.banner-container {
   margin: 0;
   padding: 0;
-  display: flex;
-}
-
-.banner-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -21,6 +13,8 @@ body {
   background-position: center;
   background-size:cover;
   background-repeat: no-repeat;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 91%, 68% 100%, 30% 92%, 0% 100%);
 }
 
 .brand-container {
@@ -29,43 +23,60 @@ body {
   flex-direction: column;
 }
 
-.title {
+.logo-banner {
+  width: 14rem;
+  padding-bottom: 5rem;
+}
+
+.title-banner {
   font-family: Nunito Sans;
   font-weight: bold;
-  font-size: 1.4rem;
-  margin-bottom: 0;
+  font-size: 3rem;
+  color: black;
+  padding-bottom: 2rem;
 }
 
-.subtitle {
+.subtitle-banner {
   font-family: Nunito Sans, Semibold;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
   width: 85%;
+  padding-bottom: 6rem;
 }
 
-.products-button {
+.products-button-banner {
   cursor: pointer;
   font-family: Nunito Sans;
-  font-weight: bolder;
-  font-size: 0.9rem;
+  font-weight: 600;
+  font-size: 2rem;
   background-color: transparent;
   border: 0.12rem solid black;
-  width: 13rem;
-  height: 2.8rem;
+  width: 30rem;
+  height: 6.3rem;
   align-self: center;
   margin-top: 5.2rem;
 }
 
 @media (min-width: 1024px){
-  .logo {
+  .logo-banner {
     width: 8rem;
+    padding-bottom: 2rem;
   }
 
-  .title {
-    font-size: 2rem;
+  .title-banner {
+    font-size: 3.7rem;
+    padding-bottom: 0.5rem;
   }
 
-  .subtitle {
-    font-size: 1.2rem;
+  .subtitle-banner {
+    font-size: 1.9rem;
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .products-button-banner{
+    font-size: 1.3rem;
+    width: 21rem;
+    height: 4rem;
   }
 }
