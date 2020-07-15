@@ -17,6 +17,8 @@ body, html, header{
     align-items: center;
 
     background-color: #000000;
+
+    z-index: 20;
 }
 
 .nav-bar-menu {
