@@ -18,8 +18,9 @@ function App() {
       <Banner />   
       <Products />   
       <AboutUs/>
-      <Footer />
       <Testimonials />
+      <Footer />
+
     </section>
   );
 }
