@@ -5,6 +5,7 @@ import NavBar from './NavBar';
 import Products from './Products';
 import Testimonials from './Testimonials';
 import Contact from './Contact';
+import IconWhats from './IconWhats';
 
 export {
   Banner,
@@ -14,4 +15,5 @@ export {
   NavBar,
   Testimonials,
   Contact,
+  IconWhats,
 };
