@@ -1,0 +1,151 @@
+body, html, section, div, h1, form, input, button { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    align-self: flex-start;
+
+    padding-bottom: 75px;
+
+    font: 700 3.4rem Nunito Sans;
+    color: #e4e4e4;
+    text-transform: uppercase;
+}
+.contact-session {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+
+    background-color: #000000;
+
+}
+.contact-session-form {
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1B1B1B;
+}
+
+form {
+    width: 80%;
+}
+
+input {
+    width: 95%;
+
+    font: 400 1.9rem Nunito Sans;
+    color: #e4e4e4;
+
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid #e4e4e4;
+    margin-bottom: 20px;
+    padding: 10px;
+
+    cursor: pointer;
+    outline: none;
+}
+
+input::placeholder {
+    font-family: Nunito Sans;
+    font-size: 1.8rem;
+    color: #e4e4e4;
+    font-weight: 400;
+}
+
+.first{
+    width: 40%;
+}
+
+#first{
+    margin-right: 80px;
+}
+
+.message{
+    height: 25%;
+}
+
+.submit {
+    width: 25%;
+    height: 10%;
+
+    float: right;
+
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin-right: 10px;
+    color: #000000;
+    background: #FFFFFFCC;
+}
+
+input:hover{
+    box-shadow: 15px 15px 5px #00000029;
+}
+
+.contact-session-secondary {
+    width: 40%;
+    height: 100%;
+
+    background-color: #000000;
+    background-image: url(./contact-image.png);
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+
+    box-shadow: 15px 15px 5px #00000029;
+}
+
+@media (max-width: 1249px){
+    .first {
+        width: 95%;
+    }
+}
+
+@media (max-width: 768px){
+    html {
+        font-size: 40%;
+    }
+    .contact-session {
+        height: 60vh;
+    }
+    .contact-session-form {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+    .contact-session-secondary {
+        display: none;
+    }
+    .submit {
+        align-self: center;
+    }
+    .first {
+        width: 95%;
+    }
+    input {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    h1 {
+        align-self: center;
+        padding-left: 0px;
+        padding-bottom: 40px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -4,6 +4,7 @@ import Footer from './Footer';
 import NavBar from './NavBar';
 import Products from './Products';
 import Testimonials from './Testimonials';
+import Contact from './Contact';
 
 export {
   Banner,
@@ -12,4 +13,5 @@ export {
   Footer,
   NavBar,
   Testimonials,
+  Contact,
 };
