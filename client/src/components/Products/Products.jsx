@@ -12,13 +12,6 @@ import ProductsImages from './images/images';
 import Carousel from "./carousel"
 
 const Product = () => {
-  const [imagesList, setImagesList] = useState([
-    { type: 'colar', picture: Necklace1, id: 'obj1' },
-    { type: 'anel', picture: Necklace2, id: 'obj2' },
-    { type: 'colar', picture: Necklace3, id: 'obj3' },
-    { type: 'pulseira', picture: Necklace4, id: 'obj4' },
-  ]);
-
   const [products, setProducts] = useState([]);
 
   const loadProducts = async () => {

@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom';
 import {
   Banner,
   AboutUs,
-  Footer,
   NavBar,
   Product,
+  Footer,
 } from './components';
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Banner />      
       <AboutUs/>
       <Product />
+      <Footer />
     </section>
   );
 
