@@ -3,6 +3,7 @@ import AboutUs from './AboutUs';
 import Footer from './Footer';
 import NavBar from './NavBar';
 import Products from './Products';
+import Testimonials from './Testimonials';
 
 export {
   Banner,
@@ -10,4 +11,5 @@ export {
   AboutUs,
   Footer,
   NavBar,
+  Testimonials,
 };
