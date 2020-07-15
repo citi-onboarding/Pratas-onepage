@@ -36,7 +36,7 @@ html {
     box-shadow: 20px 20px 15px #00000029;
 }
 
-.testimonials-session-title h1 {
+.title {
     position: relative;
     top: 20px;
     
@@ -108,12 +108,12 @@ html {
     width: 3%;
 }
 
-h2 {
+.subtitle {
     font-size: 1.8rem;
     font-weight: 600;
 }
 
-h4 {
+.text-people {
     align-self: flex-start;
     font-family: Nunito Sans;
     font-size: 2.1rem;
@@ -121,7 +121,7 @@ h4 {
     margin-bottom: 20px;
 }
 
-h5 {
+.text-place {
     font-size: 2.1rem;
     font-weight: 700;
 
