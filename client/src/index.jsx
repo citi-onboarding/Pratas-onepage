@@ -6,6 +6,7 @@ import {
   AboutUs,
   Footer,
   NavBar,
+  Product,
 } from './components';
 
 function App() {
@@ -14,10 +15,8 @@ function App() {
       <NavBar />
       <Banner />      
       <AboutUs/>
-      <Footer />
-
+      <Product />
     </section>
   );
-}
 
 ReactDOM.render(<App />, document.getElementById('root'))
