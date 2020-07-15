@@ -9,7 +9,7 @@ function SampleNextArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style, justifyContent:'center', alignContent:'center', width:'0.5rem', display: 'flex', right:'4rem' }}
+      style={{ ...style, justifyContent:'center', alignContent:'center', width:'0.5rem', display: 'flex', right:'6rem' }}
       onClick={onClick}>
       <img src={ nextArrow } alt=""/>
       </div> 
@@ -21,7 +21,7 @@ function SamplePrevArrow(props) {
   return (
     <div
       className={className}
-      style={{ ...style,  justifyContent:'center', alignContent:'center', zIndex:10, width:'0.5rem', display: 'flex',left:'2rem' }}
+      style={{ ...style,  justifyContent:'center', alignContent:'center', zIndex:10, width:'0.5rem', display: 'flex',left:'-3.8rem' }}
       onClick={onClick}>
       <img src={ prevArrow } alt=""/>
       </div> 
