@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9d28968... created the carousel and the filter
+
+
+.products {
+  display: flex;
+  flex-direction: column;
+  background-color: #E9E9E9;
+  margin: 0;
+  padding: 0;
+}
+
+.title-container-products {
+  display: flex;
+  height: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-products {
+  background-color: white;
+  box-shadow: 15px 15px 15px #00000029;
+  position: relative;
+  opacity: 1;
+  display: flex;
+  width: 27rem;
+  height: 2.7rem;
+  top: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-products  {
+  font-family: Nunito Sans;
+  font-size: 1.5rem;
+  position: absolute;
+  top: -0.5rem;
+  z-index: 10;
+}
+
+.subtitle-products {
+  font-family: Nunito Sans;
+  font-weight: 500;
+  font-size: 1rem;
+  justify-content: center;
+  position: absolute;
+  margin: 0;
+}
+
+.category-container {
+  margin: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: fit-content;
+  margin-bottom: 0.7rem;
+  margin-top: 4rem;
+}
+
+.products-category {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border-color: transparent;
+  font-family: Nunito Sans;
+  font-weight: 800;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selected-filter-line {
+  margin-top: 0.2rem;
+  width: 90%;
+  height: 1.35px;
+  background-color: transparent;
+}
+
+.products-images-container-mobile{
+  display: none;
+}
+
+.products-images-container-web {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  justify-content: space-evenly;
+}
+
+.products-images {
+  width: 15rem;
+}
+
+.products-button {
+  cursor: pointer;
+  outline: none;
+  font-family: Nunito Sans;
+  font-weight: bolder;
+  font-size: 0.9rem;
+  background-color: transparent;
+  border: 0.12rem solid black;
+  width: fit-content;
+  height: 2.6rem;
+  align-self: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .background-products {
+    width: 18rem;
+    height: 2.5rem;
+  }
+  
+  .title-products  {
+    font-size: 1.3rem;
+    top: 0rem;
+  }
+  
+  .subtitle-products {
+    font-size: 0.7rem;
+  }
+
+  .category-container {
+    width: 5;
+  }
+
+  .products-images-container-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slick-next:before, .slick-prev:before  {
+    opacity: 0 !important;
+  }
+
+  .slide-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .carousel-image-container{
+    display: flex !important;
+    justify-content: center;
+    outline: none;
+  }
+
+  .carousel-image{
+    width: 60%;
+    height: 60%;
+  }
+
+  .products-images-container-web {
+    display:none;
+  }
+  
+  .category-container {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .products-category {
+    font-size: 0.7rem;
+    padding: 0;
+  }
+}
+
+@media (min-width: 525px) {
+  .products-category {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 760px) {
+  .background-products {
+    width: 22rem;
+    height: 3rem;
+  }
+  
+  .title-products {
+    font-size: 1.8rem;
+    top: -1.2rem;
+  }
+  
+  .subtitle-products {
+    font-size: 0.8rem;
+  }
+
+  .products-category {
+    font-size: 1.2rem;
+  }
+
+  .products-button {
+    font-size: 1.25rem;
+    width: 16rem;
+    height: 3rem;
+  }
+}
+

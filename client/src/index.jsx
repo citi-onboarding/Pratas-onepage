@@ -4,8 +4,9 @@ import ReactDOM from 'react-dom';
 import {
   Banner,
   AboutUs,
-  Footer,
   NavBar,
+  Product,
+  Footer,
 } from './components';
 
 function App() {
@@ -14,10 +15,9 @@ function App() {
       <NavBar />
       <Banner />      
       <AboutUs/>
+      <Product />
       <Footer />
-
     </section>
   );
-}
 
 ReactDOM.render(<App />, document.getElementById('root'))
