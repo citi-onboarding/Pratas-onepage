@@ -8,8 +8,9 @@ import {
   Footer,
   NavBar,
   Testimonials,
-
   Contact,
+  IconWhats,
+
 } from './components';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <AboutUs/>
       <Testimonials />
       <Contact />
+      <IconWhats />
       <Footer />
 
     </section>
