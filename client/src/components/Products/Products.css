@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 body {
   background-color: #E9E9E9;
@@ -28,7 +31,7 @@ section {
   height: 2.7rem;
   top: 1rem;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .title  {
@@ -45,6 +48,7 @@ section {
   font-size: 1rem;
   justify-content: center;
   position: absolute;
+  margin: 0;
 }
 
 .category-container {
@@ -60,19 +64,23 @@ section {
 
 .products-category {
   cursor: pointer;
+  outline: none;
   background-color: transparent;
   border-color: transparent;
   font-family: Nunito Sans;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1rem;
 }
 
-.products-images-container {
+.products-images-container-mobile{
+  display: none;
+}
+
+.products-images-container-web {
   display: flex;
   flex-direction: row;
   align-self: center;
   justify-content: space-evenly;
-  width: 80%;
 }
 
 .products-images {
@@ -81,14 +89,69 @@ section {
 
 .products-button {
   cursor: pointer;
+  outline: none;
   font-family: Nunito Sans;
   font-weight: bolder;
   font-size: 0.9rem;
   background-color: transparent;
   border: 0.12rem solid black;
-  width: 11.5rem;
+  width: fit-content;
   height: 2.6rem;
   align-self: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+
+  .background {
+    width: 18rem;
+    height: 2.5rem;
+  }
+  
+  .title  {
+    font-size: 1.3rem;
+    top: 0rem;
+  }
+  
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .products-images-container-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .slide-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .carousel-image-container{
+    display: flex !important;
+    justify-content: center;
+    outline: none;
+  }
+
+  .carousel-image{
+    width: 60%;
+    height: 60%;
+  }
+
+  .products-images-container-web {
+    display:none;
+  }
+  
+  .category-container {
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .products-category {
+    font-size: 0.7rem;
+    padding: 0;
+  }
 }

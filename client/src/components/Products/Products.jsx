@@ -1,19 +1,24 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
-import ProducsImages from './images/images'
+
 import Necklace1 from './images/necklace/necklace.png';
 import Necklace2 from './images/necklace/necklace2.png';
 import Necklace3 from './images/necklace/necklace3.png';
 import Necklace4 from './images/necklace/necklace4.png';
 
-// import Slider from 'react-slick';
-// import "slick-carousel/slick/slick.css"; 
-// import "slick-carousel/slick/slick-theme.css";
-
 import './Products.css';
 import ProductsImages from './images/images';
 
+import Carousel from "./carousel"
+
 const Product = () => {
+  const [imagesList, setImagesList] = useState([
+    { type: 'colar', picture: Necklace1, id: 'obj1' },
+    { type: 'anel', picture: Necklace2, id: 'obj2' },
+    { type: 'colar', picture: Necklace3, id: 'obj3' },
+    { type: 'pulseira', picture: Necklace4, id: 'obj4' },
+  ]);
+
   const [products, setProducts] = useState([]);
 
   const loadProducts = async () => {
@@ -24,6 +29,9 @@ const Product = () => {
   useEffect(() => {
     loadProducts();
   }, []);
+
+  const [filter, setFilter] = useState('');
+
 
   const productsImages = [
     {
@@ -66,8 +74,15 @@ const Product = () => {
       // picture: classiicação pulseira
     }
     
-  ]
-    
+  ];
+
+  const handleFilterChange = (clicked) => {
+    if (clicked === filter) {
+      setFilter('');
+    } else {
+      setFilter(clicked);
+    };
+  }
 
   return (
     <section>
@@ -78,41 +93,50 @@ const Product = () => {
         </div>
       </div>
 
-      <div className="category-container">
+     <div className="category-container">
         <button 
           className="products-category"
-          onClick="">
+          onClick= {() => handleFilterChange('colar')}>
           COLARES
         </button>
 
         <button 
           className="products-category"
-          onClick="">
+          onClick={() => handleFilterChange('brinco')}>
           BRINCOS
         </button>
 
         <button 
           className="products-category"
-          onClick="">
+          onClick={() => handleFilterChange('anel')}>
           ANÉIS
         </button>
   
         <button 
           className="products-category"
-          onClick=""> 
+          onClick={() => handleFilterChange('argola')}> 
           ARGOLAS
         </button>
 
         <button 
           className="products-category"
-          onClick="">
+          onClick={() => handleFilterChange('pulseira')}>
           PULSEIRAS
         </button>
       </div>
 
-      <div  className="products-images-container">
-        { (productsImages.filter((product) => product.name.toLowerCase() == 'colar')).map((product) => <ProductsImages key={product.name} product={product} />)}
+      <div className="products-images-container-mobile">
+        <Carousel filter={filter} imagesList={imagesList} />
       </div>
+
+      <div  className="products-images-container-web">
+        
+        {imagesList.filter((eachItem) => !filter || filter === eachItem.type).map((product) => (
+          <ProductsImages key={product.name} product={product} />)
+        )}
+
+      </div>
+
       <button className="products-button">
         VEJA MAIS PRODUTOS
       </button>
