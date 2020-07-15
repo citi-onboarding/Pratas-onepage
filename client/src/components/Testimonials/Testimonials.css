@@ -65,7 +65,7 @@ html {
 }
 
 .testimonials-session-carrossel {
-    width: 70%;
+    width: 77%;
     height: 45%;
 }
 
@@ -76,7 +76,7 @@ html {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .carrossel-image {
@@ -101,7 +101,7 @@ html {
 
     padding-right: 15px;
     padding-left: 15px;
-    box-shadow: 20px 20px 15px #00000029;
+    box-shadow: 9px 9px 15px #00000029;
 }
 
 .carrossel-text img {
@@ -143,6 +143,7 @@ h5 {
     }
     .carrossel-image {
         width: 33vh;
+        box-shadow: none;
     }
     .carrossel-text {
         width: 80%;
