@@ -1,0 +1,15 @@
+.whatsapp-icon {
+    display: flex;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
+
+.icon {
+    width: 20px;
+    justify-content: center;
+}
+
+.icon-link{
+    color: transparent;
+}
