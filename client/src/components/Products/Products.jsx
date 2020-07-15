@@ -1,5 +1,14 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
+import ProducsImages from './images/images'
+import Necklace1 from './images/necklace/necklace.png';
+import Necklace2 from './images/necklace/necklace2.png';
+import Necklace3 from './images/necklace/necklace3.png';
+import Necklace4 from './images/necklace/necklace4.png';
+
+// import Slider from 'react-slick';
+// import "slick-carousel/slick/slick.css"; 
+// import "slick-carousel/slick/slick-theme.css";
 
 import Necklace1 from './images/necklace/necklace.png';
 import Necklace2 from './images/necklace/necklace2.png';
