@@ -162,10 +162,10 @@ html {
         height: 30%;
         padding: 8px;
     }
-    h4 {
+    .text-people {
         margin-bottom: 0;
     }
-    h5 {
+    .text-place {
         align-self: flex-start;
     }
 }
