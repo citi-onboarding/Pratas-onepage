@@ -142,6 +142,7 @@ html {
     }
     .testimonials-session {
         clip-path: polygon(31% 95%, 0 100%, 0 6%, 35% 0, 68% 7%, 100% 0, 100% 96%, 58% 100%);
+        margin-bottom: -7rem;
     }
     .testimonials-session-carrossel{
         height: 75%;
