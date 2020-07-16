@@ -181,17 +181,17 @@ html {
 
 @media (max-width: 425px) {
     .testimonials-session{
-        height: 105vh;
+        height: 120vh;
     }
 }
 @media (max-width: 375px) {
     .testimonials-session{
-        height: 110vh;
+        height: 122vh;
     }
 }
 @media (max-width: 320px) {
     .testimonials-session{
-        height: 120vh;
+        height: 138vh;
     }
 }
 
