@@ -140,8 +140,8 @@
     justify-content: center;
   }
 
-  .slick-next:before, .slick-prev:before  {
-    opacity: 0 !important;
+  .products-images-container-mobile .slick-next:before, .slick-prev:before  {
+    opacity: 0;
   }
 
   .slide-container {

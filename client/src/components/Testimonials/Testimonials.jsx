@@ -23,9 +23,9 @@ function Testimonials() {
     return(
         <section className="testimonials-session">
             <div className="testimonials-session-title">
-                <h1>Depoimentos</h1>
+                <h1 className="title">Depoimentos</h1>
                 <div className="session-subtitle">
-                    <h2>Veja o que nossos clientes falam</h2>
+                    <h2 className="subtitle">Veja o que nossos clientes falam</h2>
                 </div>
             </div>
             <div className="testimonials-session-carrossel">
@@ -34,14 +34,14 @@ function Testimonials() {
                         <div className="carrossel-item">
                             <img src={imgTestimonials} alt="Testimonials Imagem" className="carrossel-image"/>
                             <div className="carrossel-text">
-                                <h4>Josimeire Pinheiro</h4>
-                                <p><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
+                                <h4 className="text-people">Josimeire Pinheiro</h4>
+                                <p className="text-testimonial"><img src={imgAspasE} alt="Aspas Esquerda"/><br/>Eu amo Prata! Gosto de usar muitas coisas ao mesmo tempo. 
                                 Eu não uso apenas acessórios, e sim alegorias e adereços... rsrsrs. 
                                 Quem me conhece sabe disso! E depois que conheci Jaqueline (Jack Menck Pratas)
                                 , há mais de 12 anos, tudo aumentou! Muitos anéis, muito tudo. Pois ela tem produtos
                                 exclusivos de qualidade e bom preço. Tudo de excelência. Sempre disponível e a disposição 
                                 para agradar as clientes. Hoje é minha amiga. Mora no coração. <img src={imgAspasD} alt="Aspas Direita"/></p>
-                                <h5>- Juazeiro (Bahia)</h5>    
+                                <h5 className="text-place">- Juazeiro (Bahia)</h5>    
                             </div>
                         </div>
                     </div>

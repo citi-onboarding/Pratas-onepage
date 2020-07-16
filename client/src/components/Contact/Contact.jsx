@@ -7,7 +7,7 @@ function Contact(){
         <section className="contact-session">
             <div className="contact-session-form">
                 <form action="" target="_blank">
-                    <h1>Contato</h1>
+                    <h1 className="contact-title">Contato</h1>
                     <input type="text" placeholder="Nome" className="first" id="first"/>
                     <input type="text" placeholder="Telefone" className="first"/><br/>
                     <input type="text" placeholder="Email"/><br/>
