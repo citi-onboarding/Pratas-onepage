@@ -17,6 +17,8 @@ body, html, header{
     align-items: center;
 
     background-color: #000000;
+
+    z-index: 20;
 }
 
 .nav-bar-menu {
@@ -98,6 +100,8 @@ body, html, header{
 
         background-color: #000000;
         opacity: 0.9;
+
+        transition-duration: 0.5s;
     }
     .menu-session.on nav {
         display: block;
