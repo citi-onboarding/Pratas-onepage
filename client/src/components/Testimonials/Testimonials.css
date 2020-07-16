@@ -137,12 +137,24 @@ html {
     .testimonials-session-carrossel .slick-prev:before {
         opacity: 1;
     }
+    .testimonials-session-carrossel .slick-next:before {
+        content: url(./arrowRMobile.png);
+    }
+    .testimonials-session-carrossel .slick-prev:before {
+        content: url(./arrowLMobile.png);
+    }
+    .testimonials-session-carrossel .slick-prev {
+        left: -20px;
+    }
+    .testimonials-session-carrossel .slick-next {
+        right: -20px;
+    }
     html {
         font-size: 35%;
     }
     .testimonials-session {
         clip-path: polygon(31% 95%, 0 100%, 0 6%, 35% 0, 68% 7%, 100% 0, 100% 96%, 58% 100%);
-        margin-bottom: -7rem;
+        margin-bottom: -8rem;
     }
     .testimonials-session-carrossel{
         height: 75%;
@@ -158,6 +170,7 @@ html {
         width: 80%;
         justify-content: flex-start;
         padding-top: 20px;
+        box-shadow:  2px 2px 10px #00000029
     }
     .testimonials-session-title {
         width: auto;
@@ -181,12 +194,12 @@ html {
 
 @media (max-width: 425px) {
     .testimonials-session{
-        height: 120vh;
+        height: 123vh;
     }
 }
 @media (max-width: 375px) {
     .testimonials-session{
-        height: 122vh;
+        height: 128vh;
     }
 }
 @media (max-width: 320px) {
