@@ -1,48 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.about-us {
+.title-container-about-us {
   display: flex;
-  flex-direction: column;
-}
-
-.title-container {
-  display: flex;
-  height: 5rem;
+  height: 10rem;
+  width: 100%;
   align-items: center;
   position: relative;
+  margin-top: 5rem;
 }
 
-.background {
+.background-about-us {
   background-color: #E9E9E9;
   box-shadow: 15px 15px 15px #00000029;
   position: relative;
   opacity: 1;
   display: flex;
-  width: 10rem;
-  height: 2rem;
-  top: 2rem;
+  width: 27rem;
+  height: 5rem;
   justify-content: center;
+  align-items: center;
 }
 
 .title-about-us {
   font-family: Nunito Sans;
   font-weight: bold;
-  position: absolute; 
-  top: 1.45rem;                                                                                                                    
-  left: 1.5rem;
+  color: black;
+  position: absolute;                                                                                                                    
+  left: 3.5rem;
   z-index: 10;
+  top: 0.1rem;
 }
 
 .subtitle-about-us {
   font-family: Nunito Sans;
-  font-size: 0.6rem;
-  justify-content: center;
-  align-self: center;
+  font-size: 1.5rem;
   position: absolute;
   margin: 0;
 }
@@ -51,11 +50,11 @@ body {
   align-self: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  width: 13rem;
+  width: 35rem;
   box-shadow: 15px 15px 15px #00000029;
 }
 
-.information-container {
+.information-container-about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -63,8 +62,11 @@ body {
 
 .about-us-text {
   font-family: Nunito Sans;
-  width: 13rem;
+  font-size: 2rem;
+  width: 33rem;
   flex-wrap: wrap;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .values-container {
@@ -78,17 +80,18 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .values-icons {
-  width: 7rem;
+  width: 15rem;
 }
 
 .values-text {
   font-family: Nunito Sans;
-  width: 13rem;
+  width: 26rem;
   flex-wrap: wrap;
-  font-size: 0.8rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -100,36 +103,30 @@ body {
     padding-top: 2rem;
   }
 
-  html {
-    font-size: 62,5%;
+  .background-about-us {
+    width: 33rem;
+    height: 6rem;
   }
 
-  .about-us {
-    display: flex;
-  }
-
-  .background {
-    width: 20rem;
-    height: 3rem;
-  }
-
-  .title-container {
+  .title-container-about-us {
     padding-bottom: 2rem;
   }
 
   .title-about-us {
-    font-size: 2rem;
-    left: 4rem;
-    top: -0.6rem;
+    font-size: 3.5rem;
+    left: 6rem;
+    top: -0.5rem;
   }
 
   .subtitle-about-us {
-    font-size: 1rem;
+    font-size: 2rem;
+    align-self: center;
   }
 
-  .information-container {
+  .information-container-about-us {
     flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
   }
 
   .owner-picture {
@@ -142,14 +139,11 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 5rem;
   }
 
   .about-us-text {
-    font-size: 1rem;
+    font-size: 1.8rem;
     width: 90%;
-    left: 6rem;
-    
   }
  
   .values-container {
@@ -159,16 +153,26 @@ body {
   }
 
   .each-value {
-    width: 9rem;
+    width: 15rem;
   }
 
   .values-icons {
-    width: 6rem;
+    width: 13rem;
   }
 
   .values-text {
-    font-size: 0.8rem;
-    width: 9.5rem;
+    font-size: 1.5rem;
+    width: 16rem;
   }
 
+}
+
+@media (min-width:1200px) {
+  .values-container {
+    width: 65rem;
+  }
+
+  .values-text {
+    width: 20rem;
+  }
 }
