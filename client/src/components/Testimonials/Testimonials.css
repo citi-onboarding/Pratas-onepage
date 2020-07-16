@@ -134,7 +134,7 @@ html {
 }
 
 @media (max-width: 768px){
-    .testimonials-session-carrossel button {
+    .testimonials-session-carrossel .slick-prev:before {
         opacity: 1;
     }
     html {
