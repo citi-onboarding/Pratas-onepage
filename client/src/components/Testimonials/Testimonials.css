@@ -134,6 +134,9 @@ html {
 }
 
 @media (max-width: 768px){
+    .testimonials-session-carrossel button {
+        opacity: 1;
+    }
     html {
         font-size: 35%;
     }
