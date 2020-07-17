@@ -32,7 +32,7 @@ function NavBar(){
                 <ul className="nav-bar-menu">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Sobre Nós</a></li>
+                    <li><a href="#aboutus">Sobre Nós</a></li>
                     <li><a href="#">Depoimentos</a></li>
                     <li><a href="#">Contatos</a></li>
                 </ul>
