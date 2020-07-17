@@ -20,8 +20,8 @@ function Banner() {
 
   return(
     <div>
-      {bannerElements?.map(({_id,text,image}) => (
-      <section className="banner-container" style={{backgroundImage:`url('${image[0]?.url}')`}}>
+      {bannerElements?.map(({_id,text,background}) => (
+      <section className="banner-container" style={{backgroundImage:`url('${background[0]?.url}')`}}>
           <div key={_id} className="brand-container">
             <img className="logo-banner" src={Logo} alt="logo"/>
             <h1 className="title-banner">{text}</h1>
