@@ -7,7 +7,6 @@ import ProductsImages from './images/images';
 import Carousel from "./carousel";
 
 const Product = () => {
-  const [imagesList, setImagesList] = useState([]);
 
   const [products, setProducts] = useState([]);
 
@@ -84,7 +83,7 @@ const Product = () => {
       </div>
 
       <div className="products-images-container-mobile">
-        <Carousel filter={filter} imagesList={imagesList} />
+        <Carousel filter={filter} imagesList={products} />
       </div>
 
       <div  className="products-images-container-web">
