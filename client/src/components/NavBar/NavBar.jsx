@@ -31,7 +31,7 @@ function NavBar(){
             <nav>
                 <ul className="nav-bar-menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#">Produtos</a></li>
+                    <li><a href="#products">Produtos</a></li>
                     <li><a href="#aboutus">Sobre Nós</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
                     <li><a href="#contact">Contatos</a></li>
