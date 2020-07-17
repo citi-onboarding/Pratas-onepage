@@ -4,7 +4,7 @@ import './Contact.css';
 
 function Contact(){
     return(
-        <section className="contact-session">
+        <section className="contact-session" id="contact">
             <div className="contact-session-form">
                 <form action="" target="_blank">
                     <h1 className="contact-title">Contato</h1>

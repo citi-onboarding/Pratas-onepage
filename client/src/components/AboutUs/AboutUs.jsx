@@ -21,7 +21,7 @@ const AboutUs = () => {
 
   return(
 
-    <div>
+    <div id="aboutus">
     {aboutus?.map(({ TextoInspirador, Titulo, Valor, Missao, Visao, Imagem }) => (
 
       <section id="about-us" className="about-us">
