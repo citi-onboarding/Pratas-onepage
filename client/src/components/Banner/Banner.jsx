@@ -19,7 +19,7 @@ function Banner() {
   }, []);
 
   return(
-    <div>
+    <div id="home">
       {bannerElements?.map(({_id,text,image}) => (
       <section className="banner-container" style={{backgroundImage:`url('${image[0]?.url}')`}}>
           <div key={_id} className="brand-container">

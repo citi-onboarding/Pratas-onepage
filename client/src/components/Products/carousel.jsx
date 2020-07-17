@@ -30,8 +30,7 @@ function SamplePrevArrow(props) {
 
 const SimpleSlider = (props) => {  
   const { filter, imagesList } = props;
-
-  imagesList.map((product) => { return product.picture })
+  imagesList.map((product) => { console.log('===============1', product.imagem[0].url); return product.imagem[0].url })
 
   const settings = {
     arrows: true,
@@ -46,7 +45,7 @@ const SimpleSlider = (props) => {
 
   const carouselList = imagesList.map((product) => (
     <div className="carousel-image-container">
-      <img className="carousel-image" src={product.picture} alt="" />
+      <img className="carousel-image" src={product.imagem[0].url} alt="" />
     </div>
   ));
 
@@ -58,7 +57,7 @@ const SimpleSlider = (props) => {
 
           {imagesList.filter((eachItem) => !filter || filter === eachItem.type).map((product) => (
             <div className="carousel-image-container">
-              <img className="carousel-image" src={product.picture} alt="" />
+              <img className="carousel-image" src={product.imagem[0].url} alt="" />
             </div>
           ))}
 
