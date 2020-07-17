@@ -10,7 +10,7 @@ footer.add({
     Facebook: {type: Types.Url, initial: true},
     Email: {type: Types.Email, initial: true},
     Telefone: {type: Types.Text, initial: true},
-    Whatsapp: {type: Types.Url, initial: true},
+    Whatsapp: {type: Types.Text, initial: true},
     AdminURL: {type: Types.Url, initial: true}
 
 });
