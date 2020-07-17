@@ -34,7 +34,7 @@ function NavBar(){
                     <li><a href="#">Produtos</a></li>
                     <li><a href="#aboutus">Sobre Nós</a></li>
                     <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
                 </ul>
             </nav>
             <div className="icons-menu">
