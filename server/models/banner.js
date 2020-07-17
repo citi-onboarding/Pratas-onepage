@@ -5,7 +5,7 @@ const { Types } = keystone.Field;
 const Banner = new keystone.List('Banner');
 
 Banner.add({
-  image: { 
+  background: { 
     type: Types.CloudinaryImages,
     require: true,
     initial: true, 
