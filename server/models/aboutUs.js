@@ -12,6 +12,7 @@ aboutUs.add({
   Valor: { type: Types.Textarea, require: true, initial: true },
   Titulo: { type: Types.Textarea, require: true, initial: true },
   TextoInspirador: { type: Types.Textarea, require: true, initial: true },
+  Imagem: { type: Types.CloudinaryImages, require:true, initial:true }
 });
 
 aboutUs.register();
