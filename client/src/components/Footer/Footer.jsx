@@ -48,7 +48,7 @@ function Footer(){
                 </section>
                 <section className="footer-session-secondary">
                     <p>&copy; 2020 CITi - Todos os direitos reservados</p>
-                    <p>Made with &lt;&frasl;&gt; and &hearts;</p>
+                    <p className="made">Made with &lt;&frasl;&gt; and &hearts;</p>
                 </section>
                 </footer>
             ))};
