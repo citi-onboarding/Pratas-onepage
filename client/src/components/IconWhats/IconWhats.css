@@ -2,7 +2,7 @@
     display: flex;
     position: fixed;
     bottom: 25px;
-    right: 40px;
+    right: 20px;
     z-index: 2;
 }
 
@@ -18,9 +18,15 @@
 @media (max-width: 768px) {
     .whatsapp-icon {
         bottom: 60px;
-        right: 30px;
+        right: 20px;
     }
     .icon {
         width: 60px;
+    }
+}
+
+@media (max-width: 425px) {
+    .whatsapp-icon {
+        right: 10px;
     }
 }
