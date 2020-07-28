@@ -21,9 +21,9 @@ function Footer(){
     }, []);
 
     return(
-        <div>
+        <footer>
             {footer?.map(({ AdminURL, Telefone, Email, Facebook, Instragram }) => (
-            <footer>
+                <footer>
                 <section className="footer-session-main">
                     <img src={logoFooter} alt="Jacke Menck Pratas footer" className="logoFooter"/>
                 <div>
@@ -50,9 +50,9 @@ function Footer(){
                     <p>&copy; 2020 CITi - Todos os direitos reservados</p>
                     <p>Made with &lt;&frasl;&gt; and &hearts;</p>
                 </section>
-            </footer>
+                </footer>
             ))};
-        </div>
+        </footer>
     );
 };
 
