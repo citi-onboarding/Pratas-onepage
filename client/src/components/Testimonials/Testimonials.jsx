@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import './Testimonials.css';
-import imgTestimonials from './assets/img-testimonials.png';
 import imgAspasD from './assets/img-aspasD.png';
 import imgAspasE from './assets/img-aspasE.png';
 
@@ -43,8 +42,8 @@ function Testimonials() {
             </div>
             <div className="testimonials-session-carrossel">
                 <Slider {...settings}>
+                    <div>
                         {testimonial?.map(({ _id, depoimento, lugar, nome, image })=>(
-                        <div>
                             <div className="carrossel-item" id={_id}>
                                 <img src={image[0]?.url} alt="Testimonials Imagem" className="carrossel-image"/>
                                 <div className="carrossel-text">
@@ -53,8 +52,8 @@ function Testimonials() {
                                     <h5 className="text-place">{lugar}</h5>    
                                 </div>
                             </div>
-                        </div>
                         ))}
+                    </div>
                 </Slider>
             </div>
         </section>
