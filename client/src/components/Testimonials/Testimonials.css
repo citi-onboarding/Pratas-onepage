@@ -269,21 +269,21 @@ html {
 }
 
 
-.slick-prev:before {
+.testimonials-session-carrossel .slick-prev:before {
     content: url(./arrow-left.png);
     opacity: 1;
 }
 
-.slick-next:before {
+.testimonials-session-carrossel .slick-next:before {
     content: url(./arrow-right.png);
     opacity: 1;
 }
 
-.slick-prev {
+.testimonials-session-carrossel .slick-prev {
     left: -42px;
     right: -60px;
 }
 
-.slick-slide img {
+.testimonials-session-carrossel .slick-slide img {
     display: unset;
 }
