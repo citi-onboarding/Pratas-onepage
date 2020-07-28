@@ -94,9 +94,9 @@ const Product = () => {
 
       </div>
 
-      <button className="products-button">
+      <a className="products-button" target="_blank" href="https://www.instagram.com/jacquemenckpratas/"> 
         VEJA MAIS PRODUTOS
-      </button>
+      </a>
     </section>
   );
 };
