@@ -7,7 +7,6 @@ import ProductsImages from './images/images';
 import Carousel from "./carousel";
 
 const Product = () => {
-
   const [products, setProducts] = useState([]);
 
   const loadProducts = async () => {

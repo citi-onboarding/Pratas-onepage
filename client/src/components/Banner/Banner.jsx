@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 import './Banner.css';
 
@@ -27,9 +28,18 @@ function Banner() {
             <h1 className="title-banner">{text}</h1>
             <p className="subtitle-banner">Joias em prata de diferentes lugares do mundo</p>
           </div>
-          <button className="products-button-banner">
-            VEJA NOSSOS PRODUTOS
+          
+          <Link  
+            activeClass="active"
+            to="products"
+            spy={true}
+            smooth={true}
+            duration={500}
+          >
+            <button className="products-button-banner">
+              VEJA NOSSOS PRODUTOS
           </button>
+          </Link>
       </section>
       ))}
   </div>
