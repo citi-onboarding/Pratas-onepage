@@ -139,10 +139,10 @@ html {
         opacity: 1;
     }
     .testimonials-session-carrossel .slick-next:before {
-        content: url(./arrowRMobile.png);
+        content: url(./assets/arrowRMobile.png);
     }
     .testimonials-session-carrossel .slick-prev:before {
-        content: url(./arrowLMobile.png);
+        content: url(./assets/arrowLMobile.png);
     }
     .testimonials-session-carrossel .slick-prev {
         left: -20px;
@@ -269,13 +269,13 @@ html {
 }
 
 
-.testimonials-session-carrossel .slick-prev:before {
-    content: url(./arrow-left.png);
+.slick-prev:before {
+    content: url(./assets/arrow-left.png);
     opacity: 1;
 }
 
-.testimonials-session-carrossel .slick-next:before {
-    content: url(./arrow-right.png);
+.slick-next:before {
+    content: url(./assets/arrow-right.png);
     opacity: 1;
 }
 

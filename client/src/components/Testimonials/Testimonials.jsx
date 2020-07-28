@@ -4,9 +4,9 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import './Testimonials.css';
-import imgTestimonials from './img-testimonials.png';
-import imgAspasD from './img-aspasD.png';
-import imgAspasE from './img-aspasE.png';
+import imgTestimonials from './assets/img-testimonials.png';
+import imgAspasD from './assets/img-aspasD.png';
+import imgAspasE from './assets/img-aspasE.png';
 
 
 function Testimonials() {
