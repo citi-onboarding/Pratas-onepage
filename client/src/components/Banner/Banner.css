@@ -44,6 +44,7 @@
 
 .products-button-banner {
   cursor: pointer;
+  outline: none;
   font-family: Nunito Sans;
   font-weight: 600;
   font-size: 2rem;
