@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 
-import logoFooter from './logo-footer.png';
-import iconFacebook from './icon-facebook.png';
-import iconInstagram from './icon-instagram.png';
-import iconPortal from './icon-portal.png'
+import logoFooter from './assets/logo-footer.png';
+import iconFacebook from './assets/icon-facebook.png';
+import iconInstagram from './assets/icon-instagram.png';
+import iconPortal from './assets/icon-portal.png'
 
 import './Footer.css';
 
