@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
 
-import logoFooter from './logo-footer.png';
-import iconFacebook from './icon-facebook.png';
-import iconInstagram from './icon-instagram.png';
-import iconPortal from './icon-portal.png'
+import logoFooter from './assets/logo-footer.png';
+import iconFacebook from './assets/icon-facebook.png';
+import iconInstagram from './assets/icon-instagram.png';
+import iconPortal from './assets/icon-portal.png'
 
 import './Footer.css';
 
@@ -21,9 +21,9 @@ function Footer(){
     }, []);
 
     return(
-        <div>
+        <footer>
             {footer?.map(({ AdminURL, Telefone, Email, Facebook, Instragram }) => (
-            <footer>
+                <footer>
                 <section className="footer-session-main">
                     <img src={logoFooter} alt="Jacke Menck Pratas footer" className="logoFooter"/>
                 <div>
@@ -48,11 +48,11 @@ function Footer(){
                 </section>
                 <section className="footer-session-secondary">
                     <p>&copy; 2020 CITi - Todos os direitos reservados</p>
-                    <p>Made with &lt;&frasl;&gt; and &hearts;</p>
+                    <p className="made">Made with &lt;&frasl;&gt; and &hearts;</p>
                 </section>
-            </footer>
+                </footer>
             ))};
-        </div>
+        </footer>
     );
 };
 
