@@ -48,7 +48,12 @@ function Testimonials() {
                                 <img src={image[0]?.url} alt="Testimonials Imagem" className="carrossel-image"/>
                                 <div className="carrossel-text">
                                     <h4 className="text-people">{nome}</h4>
-                                        <p className="text-testimonial"><img src={imgAspasE} alt="Aspas Esquerda"/><br/>{depoimento} <img src={imgAspasD} alt="Aspas Direita"/></p>
+                                        <p className="text-testimonial">
+                                            <img src={imgAspasE} alt="Aspas Esquerda" className="left-quotes"/>
+                                            <br/>
+                                            {depoimento} 
+                                            <img src={imgAspasD} alt="Aspas Direita" className="right-quotes"/>
+                                        </p>
                                     <h5 className="text-place">{lugar}</h5>    
                                 </div>
                             </div>

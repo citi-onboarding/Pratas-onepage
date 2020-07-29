@@ -288,6 +288,10 @@ display: unset;
     }
 }
 
+.right-quotes {
+    margin: 0 0 5px 5px;
+}
+
 @media (max-width: 425px) {
     .testimonials-session{
         height: 130vh;
