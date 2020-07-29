@@ -77,6 +77,8 @@ html {
     }
     .menu-session.on .icons-menu {
         display: block;
+        position: absolute;
+        bottom: 10%;
     }
     .menu-session.on .icons-menu a {
         padding: 5px;
@@ -112,13 +114,14 @@ html {
     }
     .menu-session.on .menu-toggle {
         position: absolute;
-        top: 0;
+        top: 2%;
         left: 0;
         margin-left: 15px;
         transition-duration: 0.8s;
     }
     .menu-session.on .three {
         width: 70%;
+        margin-left: 0;
     }
     .menu-session.on .nav-bar-menu {
         text-align: center;
@@ -126,9 +129,10 @@ html {
         padding: 0;
     }
     .menu-session.on .nav-bar-menu a {
-        transition: 0.5s
+        transition: 0.5s;
+        font-size: medium;
     }
     .menu-session.on .nav-bar-menu li {
-        padding: 2rem;
+        padding: 3rem;
     }
 }
