@@ -3,6 +3,10 @@ body, html, header{
     padding: 0;
     font-size: 62.5%;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 .icons-menu {
     display: none;
 }
@@ -113,8 +117,8 @@ body, html, header{
         margin-left: 15px;
         transition-duration: 0.8s;
     }
-    .menu-session.on .menu-toogle .three {
-        transform: scaleX(0.5);
+    .menu-session.on .three {
+        width: 70%;
     }
     .menu-session.on .nav-bar-menu {
         text-align: center;

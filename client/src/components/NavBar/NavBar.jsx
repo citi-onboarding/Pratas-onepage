@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import logoNavBar from './logo-navbar.png';
-import iconTelefone from './icon-telefone.png';
-import iconFacebook from './icon-facebook.png';
-import iconInstagram from './icon-instagram.png';
-import iconEmail from './icon-email.png';
+import logoNavBar from './assets/logo-navbar.png';
+import iconTelefone from './assets/icon-telefone.png';
+import iconFacebook from './assets/icon-facebook.png';
+import iconInstagram from './assets/icon-instagram.png';
+import iconEmail from './assets/icon-email.png';
 
 import './NavBar.css';
 
@@ -18,7 +18,8 @@ function NavBar(){
         const res = await axios.get('http://localhost:3001/api/footer');
         setLinks(res.data);
     }
-    
+
+
     useEffect(()=>{
         loadLinks();
     }, []);
@@ -41,11 +42,41 @@ function NavBar(){
             </div>
             <nav>
                 <ul className="nav-bar-menu">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Produtos</a></li>
-                    <li><a href="#aboutus">Sobre Nós</a></li>
-                    <li><a href="#testimonials">Depoimentos</a></li>
-                    <li><a href="#contact">Contatos</a></li>
+                    <li><a href="#home" onClick={()=>{
+                const menuSession = document.querySelector('.menu-session');
+                if (menuSession !== undefined){
+                    menuSession.classList.toggle("on", show);
+                    setShow(!show);
+                }
+            }}>Home</a></li>
+                    <li><a href="#products" onClick={()=>{
+                const menuSession = document.querySelector('.menu-session');
+                if (menuSession !== undefined){
+                    menuSession.classList.toggle("on", show);
+                    setShow(!show);
+                }
+            }}>Produtos</a></li>
+                    <li><a href="#aboutus" onClick={()=>{
+                const menuSession = document.querySelector('.menu-session');
+                if (menuSession !== undefined){
+                    menuSession.classList.toggle("on", show);
+                    setShow(!show);
+                }
+            }}>Sobre Nós</a></li>
+                    <li><a href="#testimonials" onClick={()=>{
+                const menuSession = document.querySelector('.menu-session');
+                if (menuSession !== undefined){
+                    menuSession.classList.toggle("on", show);
+                    setShow(!show);
+                }
+            }}>Depoimentos</a></li>
+                    <li><a href="#contact" onClick={()=>{
+                const menuSession = document.querySelector('.menu-session');
+                if (menuSession !== undefined){
+                    menuSession.classList.toggle("on", show);
+                    setShow(!show);
+                }
+            }}>Contatos</a></li>
                 </ul>
             </nav>
             {links?.map(({ Instragram, Facebook, Email, Telefone })=>(
