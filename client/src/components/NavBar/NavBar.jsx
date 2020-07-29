@@ -19,6 +19,13 @@ function NavBar(){
         setLinks(res.data);
     }
 
+    const menu = ()=> {
+        const menuSession = document.querySelector('.menu-session');
+        if (menuSession !== undefined){
+            menuSession.classList.toggle("on", show);
+            setShow(!show);
+        }
+    };
 
     useEffect(()=>{
         loadLinks();
@@ -28,55 +35,18 @@ function NavBar(){
         <header className="nav-bar">
             <img src={logoNavBar} alt="Logo NavBar" className="logo-header"/>
             <section className="menu-session">
-            <div className="menu-toggle" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>
+            <div className="menu-toggle" onClick={()=>{menu()}}>
                 <div className="one"></div>
                 <div className="two"></div>
                 <div className="three"></div>
             </div>
             <nav>
                 <ul className="nav-bar-menu">
-                    <li><a href="#home" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>Home</a></li>
-                    <li><a href="#products" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>Produtos</a></li>
-                    <li><a href="#aboutus" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>Sobre Nós</a></li>
-                    <li><a href="#testimonials" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>Depoimentos</a></li>
-                    <li><a href="#contact" onClick={()=>{
-                const menuSession = document.querySelector('.menu-session');
-                if (menuSession !== undefined){
-                    menuSession.classList.toggle("on", show);
-                    setShow(!show);
-                }
-            }}>Contatos</a></li>
+                    <li><a href="#home" onClick={()=>{menu()}}>Home</a></li>
+                    <li><a href="#products" onClick={()=>{menu()}}>Produtos</a></li>
+                    <li><a href="#aboutus" onClick={()=>{menu()}}>Sobre Nós</a></li>
+                    <li><a href="#testimonials" onClick={()=>{menu()}}>Depoimentos</a></li>
+                    <li><a href="#contact" onClick={()=>{menu()}}>Contatos</a></li>
                 </ul>
             </nav>
             {links?.map(({ Instragram, Facebook, Email, Telefone })=>(
