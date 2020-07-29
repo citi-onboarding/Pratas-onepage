@@ -30,7 +30,7 @@ function NavBar(){
             <section className="menu-session">
             <div className="menu-toggle" onClick={()=>{
                 const menuSession = document.querySelector('.menu-session');
-                document.body.style.overflow = show? "hidden" : "initial";
+                
                 if (menuSession !== undefined){
                     menuSession.classList.toggle("on", show);
                     setShow(!show);
