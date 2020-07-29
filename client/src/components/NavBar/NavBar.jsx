@@ -19,12 +19,12 @@ function NavBar(){
         setLinks(res.data);
     }
 
-    const menu = ()=> {
+    const menu = () => {
         const menuSession = document.querySelector('.menu-session');
         if (menuSession !== undefined){
             menuSession.classList.toggle("on", show);
             setShow(!show);
-        }
+        };
     };
 
     useEffect(()=>{
