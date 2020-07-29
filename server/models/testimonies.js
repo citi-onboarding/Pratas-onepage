@@ -10,7 +10,19 @@ Testimonies.add({
     require: true,
     initial: true, 
   },
-  text: {
+  nome: {
+    type: Types.Text,
+    required: true, 
+    initial: true, 
+    index: true,
+  },
+  lugar: {
+    type: Types.Text,
+    required: true, 
+    initial: true, 
+    index: true,
+  },
+  depoimento: {
     type: Types.Text,
     required: true, 
     initial: true, 

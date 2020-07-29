@@ -20,7 +20,7 @@ function IconWhats() {
     return(
         <div className="whatsapp-icon">
             {whats?.map(({ Whatsapp })=>(
-                <a class="icon-link" target="_blank" href={Whatsapp}>
+                <a class="icon-link" target="_blank" rel="noopener noreferrer" href={Whatsapp}>
                     <img className="icon" src={iconwhats} alt="Whatsapp"/>
                 </a>
             ))};
