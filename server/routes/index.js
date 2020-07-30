@@ -9,6 +9,8 @@ const footer = keystone.list('Contato');
 const products = keystone.list('Produtos');
 const testimonies = keystone.list('Depoimentos');
 
+require('dotenv').config();
+
 module.exports = (app) => {
   app.use(cors());
 
@@ -58,14 +60,14 @@ module.exports = (app) => {
       port: 587,
       secure: false, 
       auth: {
-        user: process.env.USER, 
+        user: process.env.EMAIL, 
         pass: process.env.PASSWORD, 
       },
     });
 
     await transporter.sendMail({
-      from: process.env.USER, 
-      to: process.env.USER, 
+      from: process.env.EMAIL, 
+      to: process.env.EMAIL, 
       subject: 'Novo cadastro de cliente', 
       html: `<p> Nome: ${req.body.name} </p>
              <p> Telefone: ${req.body.telephone} </p>
