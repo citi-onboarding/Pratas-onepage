@@ -28,8 +28,8 @@ function Footer(){
                     <img src={logoFooter} alt="Jacke Menck Pratas footer" className="logoFooter"/>
                 <div>
                     <h3>CONTATO</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" className="sup">{Telefone}</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">{Email}</a>
+                    <p className="sup">{Telefone}</p>
+                    <p >{Email}</p>
                 </div>
                 <div>
                     <h3>SIGA-NOS</h3>
