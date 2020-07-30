@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import url from '../../global/globalVars' 
-import Target from './useful/target.png'
-import Strategy from './useful/strategy.png'
-import Value from './useful/value.png'
+import url from '../../global/globalVars'; 
+import Target from './useful/target.png';
+import Strategy from './useful/strategy.png';
+import Value from './useful/value.png';
 
 import './AboutUs.css';
 

@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars'; 
 import logoFooter from './assets/logo-footer.png';
 import iconFacebook from './assets/icon-facebook.png';
 import iconInstagram from './assets/icon-instagram.png';
@@ -12,7 +12,7 @@ function Footer(){
     const [footer, setFooter] = useState([]);
 
     const loadFooter = async() => {
-        const res = await axios.get('http://localhost:3001/api/footer');
+        const res = await axios.get(`${url}/api/footer`);
         setFooter(res.data);
     };
 

@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars'; 
 import './Contact.css';
 
 function Contact(){
     const sendEmail = async (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3001/api/contact', {
+        axios.post(`${url}/api/contact`, {
             name,
             telephone,
             email,
