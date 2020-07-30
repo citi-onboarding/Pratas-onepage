@@ -17,7 +17,7 @@ function Banner() {
   useEffect(() => {
     loadBannerElements();
   }, []);
-  alert(url)
+  
   return(
     <div id="home">
       {bannerElements?.map(({_id,text,background}) => (
