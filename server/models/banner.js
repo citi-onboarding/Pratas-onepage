@@ -15,7 +15,8 @@ Banner.add({
     required: true, 
     initial: true, 
     index: true,
-  }
+  },
+  key: { type: Types.Text, value: 'Banner', noedit: true },
 });
 
 Banner.register();

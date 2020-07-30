@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Testimonies = new keystone.List('Testimonies');
+const Testimonies = new keystone.List('Depoimentos');
 
 Testimonies.add({
   image: { 
@@ -23,7 +23,7 @@ Testimonies.add({
     index: true,
   },
   depoimento: {
-    type: Types.Text,
+    type: Types.Textarea,
     required: true, 
     initial: true, 
     index: true,

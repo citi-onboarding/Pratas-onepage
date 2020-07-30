@@ -3,25 +3,17 @@ const path = require('path');
 const keystone = require('keystone');
 const cors = require('cors');
 
-const Example = keystone.list('Examples');
 const aboutUs = keystone.list('Quem Somos');
 const banner = keystone.list('Banner');
 const footer = keystone.list('Social');
 const products = keystone.list('Produtos');
-const testimonies = keystone.list('Testimonies');
+const testimonies = keystone.list('Depoimentos');
 
 module.exports = (app) => {
   app.use(cors());
 
   app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public/index.html'));
-  });
-
-  app.get('/api/examples', (req, res) => {
-    Example.model.find((err, items) => {
-      if (err) return res.apiError('database error', err);
-      res.send(items);
-    });
   });
 
   app.get('/api/aboutUs', (req, res) => {
@@ -76,10 +68,10 @@ module.exports = (app) => {
       to: process.env.USER, 
       subject: 'Novo cadastro de cliente', 
       html: `<p> Nome: ${req.body.name} </p>
-<p> Telefone: ${req.body.telephone} </p>
-<p> Email: ${req.body.email} </p>
-<p> Onde nos conheceu: ${req.body.meeting} </p>
-<p> Mensagem: ${req.body.message} </p>`,
+             <p> Telefone: ${req.body.telephone} </p>
+             <p> Email: ${req.body.email} </p>
+             <p> Onde nos conheceu: ${req.body.meeting} </p>
+             <p> Mensagem: ${req.body.message} </p>`,
     });
 
     res.send('enviado');

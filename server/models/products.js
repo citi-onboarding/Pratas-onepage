@@ -8,7 +8,6 @@ const products = new keystone.List('Produtos', {map: {name: 'nome'}});
 products.add({
 
     imagem: { type: Types.CloudinaryImages, required: true, initial: true },
-    nome: { type: Types.Text, required: true, initial: true },
     type: { type: Select, options: 'colar, anel, pulseira, brinco, argola', required: true, initial: true }
 });
 
