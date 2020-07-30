@@ -12,7 +12,6 @@ const Product = () => {
   const loadProducts = async () => {
     const res = await axios.get(`${url}/api/products`);
     setProducts(res.data);
-    console.log(res.data);
   };
 
   useEffect(() => {

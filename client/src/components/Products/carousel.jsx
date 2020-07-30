@@ -30,8 +30,7 @@ function SamplePrevArrow(props) {
 
 const SimpleSlider = (props) => {  
   const { filter, imagesList } = props;
-  imagesList.map((product) => { console.log('===============1', product.imagem[0].url); return product.imagem[0].url })
-
+ 
   const settings = {
     arrows: true,
     dots: true,
