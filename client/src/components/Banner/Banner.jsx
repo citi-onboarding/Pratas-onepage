@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import url from '../../global/globalVars' 
 import './Banner.css';
 
 import Logo from './useful/logo.svg';
@@ -10,7 +10,7 @@ function Banner() {
   const [bannerElements, setBannerElements] = useState([]);
 
   const loadBannerElements = async () => {
-    const res = await axios.get('http://localhost:3001/api/banner');
+    const res = await axios.get(`${url}/api/banner`);
     setBannerElements(res.data);
     console.log(res.data);
   };
