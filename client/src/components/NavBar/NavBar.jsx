@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars';
 import logoNavBar from './assets/logo-navbar.png';
 import iconTelefone from './assets/icon-telefone.png';
 import iconFacebook from './assets/icon-facebook.png';
@@ -15,7 +15,7 @@ function NavBar(){
     const [show, setShow] = useState(true);
 
     const loadLinks = async () => {
-        const res = await axios.get('http://localhost:3001/api/footer');
+        const res = await axios.get(`${url}/api/footer`);
         setLinks(res.data);
     }
 

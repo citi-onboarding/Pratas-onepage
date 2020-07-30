@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ProductsImages = (props) => {
- console.log(props.product);
   return(
 
     <div>

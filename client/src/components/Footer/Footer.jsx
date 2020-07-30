@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars'; 
 import logoFooter from './assets/logo-footer.png';
 import iconFacebook from './assets/icon-facebook.png';
 import iconInstagram from './assets/icon-instagram.png';
@@ -12,7 +12,7 @@ function Footer(){
     const [footer, setFooter] = useState([]);
 
     const loadFooter = async() => {
-        const res = await axios.get('http://localhost:3001/api/footer');
+        const res = await axios.get(`${url}/api/footer`);
         setFooter(res.data);
     };
 
@@ -28,8 +28,8 @@ function Footer(){
                     <img src={logoFooter} alt="Jacke Menck Pratas footer" className="logoFooter"/>
                 <div>
                     <h3>CONTATO</h3>
-                    <a href="http://" target="_blank" rel="noopener noreferrer" className="sup">{Telefone}</a>
-                    <a href="http://" target="_blank" rel="noopener noreferrer">{Email}</a>
+                    <p className="sup">{Telefone}</p>
+                    <p >{Email}</p>
                 </div>
                 <div>
                     <h3>SIGA-NOS</h3>

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
-import Target from './useful/target.png'
-import Strategy from './useful/strategy.png'
-import Value from './useful/value.png'
+import url from '../../global/globalVars'; 
+import Target from './useful/target.png';
+import Strategy from './useful/strategy.png';
+import Value from './useful/value.png';
 
 import './AboutUs.css';
 
@@ -11,7 +11,7 @@ const AboutUs = () => {
   const [aboutus, setAboutus] = useState([]);
 
   const loadAboutus = async () => {
-    const res = await axios.get('http://localhost:3001/api/aboutUs');
+    const res = await axios.get(`${url}/api/aboutUs`);
     setAboutus(res.data);
   };
 

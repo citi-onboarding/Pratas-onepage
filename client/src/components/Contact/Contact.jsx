@@ -1,18 +1,24 @@
 import React, {useState} from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars'; 
 import './Contact.css';
 
 function Contact(){
     const sendEmail = async (event) => {
         event.preventDefault();
-        axios.post('http://localhost:3001/api/contact', {
+        axios.post(`${url}/api/contact`, {
             name,
             telephone,
             email,
             meeting,
             message
         });
+        setEmail('');
+        setMeeting('');
+        setMessage('');
+        setName('');
+        setTelephone('');
+        alert('Seu email foi enviado com sucesso');
     }
 
     const [name, setName] = useState('');
@@ -44,7 +50,7 @@ function Contact(){
                         <option className="option-meeting" value="Outro">Outro</option>
                     </select> 
                     <textarea placeholder="Mensagem" className="message" value={message} onChange={(event) => setMessage(event.target.value)}></textarea>
-                    <input type="submit" className="submit" value="Enviar" onClick={() => alert('Enviado')}/>
+                    <input type="submit" className="submit" value="ENVIARr" />
                 </form>
             </div> 
             <div className="contact-session-secondary">

@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from "react";
 import axios from 'axios';
-
+import url from '../../global/globalVars';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ function Testimonials() {
 
     const [testimonial, setTestimonial] = useState([]);
     const loadTestimonial = async ()=>{
-        const res = await axios.get('http://localhost:3001/api/testimonies');
+        const res = await axios.get(`${url}/api/testimonies`);
         setTestimonial(res.data);
     }
 

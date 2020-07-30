@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from 'react';
 import axios from 'axios';
-
+import url from '../../global/globalVars';
 import './Products.css';
 import ProductsImages from './images/images';
 
@@ -10,9 +10,8 @@ const Product = () => {
   const [products, setProducts] = useState([]);
 
   const loadProducts = async () => {
-    const res = await axios.get('http://localhost:3001/api/products');
+    const res = await axios.get(`${url}/api/products`);
     setProducts(res.data);
-    console.log(res.data);
   };
 
   useEffect(() => {

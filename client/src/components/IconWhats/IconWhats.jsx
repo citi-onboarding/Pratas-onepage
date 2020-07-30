@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+import url from '../../global/globalVars';
 import iconwhats from './icon-whats.png';
 
 import './IconWhats.css';
@@ -9,7 +9,7 @@ function IconWhats() {
     const [whats, setWhats] = useState([]);
 
     const loadWhats = async () => {
-        const res = await axios.get('http://localhost:3001/api/footer');
+        const res = await axios.get(`${url}/api/footer`);
         setWhats(res.data);
     };
 
