@@ -3,7 +3,11 @@ const keystone = require('keystone');
 const { Types } = keystone.Field;
 
 // First we create the WhoWeAre list.
-const aboutUs = new keystone.List('Quem Somos', {map: { name: 'Titulo' }}, {nocreate: true}, {nodelete: true});
+const aboutUs = new keystone.List('Quem Somos', {
+  map: { name: 'Titulo' }, 
+  nocreate: true, 
+  nodelete: true
+});
 
 // Then we are going to add the fields to our list.
 aboutUs.add({

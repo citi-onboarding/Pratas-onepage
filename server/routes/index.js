@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const aboutUs = keystone.list('Quem Somos');
 const banner = keystone.list('Banner');
-const footer = keystone.list('Social');
+const footer = keystone.list('Contato');
 const products = keystone.list('Produtos');
 const testimonies = keystone.list('Depoimentos');
 

@@ -2,7 +2,7 @@ const keystone = require('keystone');
 
 const { Types } = keystone.Field;
 
-const Testimonies = new keystone.List('Depoimentos');
+const Testimonies = new keystone.List('Depoimentos',{map: { name: 'nome' }});
 
 Testimonies.add({
   image: { 
