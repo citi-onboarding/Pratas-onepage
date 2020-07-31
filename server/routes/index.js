@@ -60,14 +60,14 @@ module.exports = (app) => {
       port: 587,
       secure: false, 
       auth: {
-        user: process.env.EMAIL, 
+        user: process.env.EMAIL_FROM, 
         pass: process.env.PASSWORD, 
       },
     });
 
     await transporter.sendMail({
-      from: process.env.EMAIL, 
-      to: process.env.EMAIL, 
+      from: process.env.EMAIL_FROM, 
+      to: process.env.EMAIL_TO, 
       subject: 'Novo cadastro de cliente', 
       html: `<p> Nome: ${req.body.name} </p>
              <p> Telefone: ${req.body.telephone} </p>
