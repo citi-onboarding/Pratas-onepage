@@ -50,7 +50,7 @@ function Contact(){
                         <option className="option-meeting" value="Outro">Outro</option>
                     </select> 
                     <textarea placeholder="Mensagem" className="message" value={message} onChange={(event) => setMessage(event.target.value)}></textarea>
-                    <input type="submit" className="submit" value="ENVIARr" />
+                    <input type="submit" className="submit" value="ENVIAR" />
                 </form>
             </div> 
             <div className="contact-session-secondary">
